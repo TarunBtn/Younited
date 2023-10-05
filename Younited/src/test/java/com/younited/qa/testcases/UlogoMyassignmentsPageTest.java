@@ -41,15 +41,14 @@ public class UlogoMyassignmentsPageTest extends TestBase{
 		testUtil.testWaitFour();
 		testUtil.scrollDown();
 		testUtil.testWaitFour();
-		
-		
+			
 	}
 	
 	@Test
 	public void UlogoMyassignmentsPage()throws Exception {
 		myAssignmentsPage.clickChooseCompanyDropDown();
 		testUtil.testWaitTwo();
-		myAssignmentsPage.selectCompany();
+		myAssignmentsPage.selectCompanyFromDropDown();
 		testUtil.testWaitFour();
 		myAssignmentsPage.clickChooseCompanyDropDown();
 		testUtil.testWaitTwo();

@@ -51,7 +51,7 @@ public class MyAssignmentsPageTest extends TestBase{
 		testUtil.testWaitEleven();
 		myAssignmentsPage.clickChooseCompanyDropDown();
 		testUtil.testWaitTwo();
-		myAssignmentsPage.selectCompany();
+		myAssignmentsPage.selectCompanyFromDropDown();
 		testUtil.testWaitFour();
 		myAssignmentsPage.clickChooseCompanyDropDown();
 		testUtil.testWaitTwo();
