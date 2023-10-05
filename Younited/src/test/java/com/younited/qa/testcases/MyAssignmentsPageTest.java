@@ -31,7 +31,7 @@ public class MyAssignmentsPageTest extends TestBase{
 		myAssignmentsPage=new MyAssignmentsPage();
 		testUtil=new TestUtil();
 		homePage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
-		testUtil.testWaitEight();
+		testUtil.testWaitFourteen();
 		homePage.clickAcceptAllCookies();
 		testUtil.testWaitEight();		
 		homePage.clickMyAssignmentsLink();
@@ -60,9 +60,9 @@ public class MyAssignmentsPageTest extends TestBase{
 		myAssignmentsPage.selectStatusFromDropDown();
 		testUtil.testWaitFour();
 		myAssignmentsPage.StatusDropDown();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		myAssignmentsPage.StatusDropDown();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		myAssignmentsPage.clearStatusFromDropDown();
 		testUtil.testWaitFour();
 		myAssignmentsPage.StatusDropDown();

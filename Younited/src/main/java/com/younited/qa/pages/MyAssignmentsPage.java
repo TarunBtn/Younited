@@ -20,7 +20,7 @@ public class MyAssignmentsPage extends TestBase{
 	@FindBy(xpath="//*[@id=\"initial-sort-select\"]")
 	WebElement chooseCompanyDropDown;
 		
-	@FindBy(xpath="//*[@id=\"initial-sort-select\"]/option[8]")
+	@FindBy(xpath="//*[@id=\"initial-sort-select\"]/option[2]")
 	WebElement selectCompanyFromDropDown;
 	
 	@FindBy(xpath="//*[@id=\"table\"]/tbody/tr[2]/td[4]/div/a/span[2]")
@@ -59,7 +59,7 @@ public class MyAssignmentsPage extends TestBase{
 	@FindBy(xpath="//option[@value='Open']")
 	WebElement selectStatusFromDropDown;
 	
-	@FindBy(xpath="/html/body/div[1]/main/div/div[2]/div/div/div/div[2]/div/div/div[1]/div[3]/select/option[1]")
+	@FindBy(xpath="/html/body/div[1]/main/div/div[2]/div/div/div/div/div/div/div[1]/div[3]/select/option[1]")
 	WebElement clearStatusFromDropDown;
 		
 		
