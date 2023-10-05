@@ -31,7 +31,7 @@ public class UlogoAllcompaniesPageTest extends TestBase{
 		uLogoAllcompaniesPage=new UlogoAllcompaniesPage();
 		testUtil=new TestUtil();
 		homePageAdmin=loginPage.loginHomePageAdmin(prop.getProperty("usernametwo"), prop.getProperty("passwordtwo"));
-		testUtil.testWaitEight();
+		testUtil.testWaitEleven();
 		homePageAdmin.clickAcceptAllCookies();
 		testUtil.testWaitEight();
 		homePageAdmin.clickUserLogo();
@@ -77,7 +77,7 @@ public class UlogoAllcompaniesPageTest extends TestBase{
 		//AddNewCompany
 		uLogoAllcompaniesPage.clickAddNewCompany();
 		testUtil.testWaitFour();
-		uLogoAllcompaniesPage.enterCompanyName("Silver Autogroep");
+		uLogoAllcompaniesPage.enterCompanyName("Cybage");
 		testUtil.testWaitEight();
 		uLogoAllcompaniesPage.selectCompanyTooltip();
 		testUtil.testWaitFour();
@@ -91,7 +91,7 @@ public class UlogoAllcompaniesPageTest extends TestBase{
 		testUtil.testWaitFour();
 		uLogoAllcompaniesPage.clearWebsiteField();
 		testUtil.testWaitTwo();
-		uLogoAllcompaniesPage.enterWebsite("https://silverauto.com/");
+		uLogoAllcompaniesPage.enterWebsite("https://cybage.com");
 		testUtil.testWaitFour();
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
@@ -106,13 +106,13 @@ public class UlogoAllcompaniesPageTest extends TestBase{
 		testUtil.testWaitFour();
 		System.out.println(uLogoAllcompaniesPage.companyLink());
 		testUtil.testWaitTwo();
-		if(uLogoAllcompaniesPage.companyLink().equals("Silver Autogroep verified")) {
-			testUtil.testWaitTwo();
-			uLogoMycompanyPage.clickDeleteCompany();
-			testUtil.testWaitEight();
-		}else {
-			System.out.println("Company name not exist");
-		}
+		//if(uLogoAllcompaniesPage.companyLink().equals("Cybage Software B.V.")) {
+			//testUtil.testWaitTwo();
+		uLogoMycompanyPage.clickDeleteCompany();
+			//testUtil.testWaitEight();
+		//}else {
+			//System.out.println("Company name not exist");
+		//}
 					
 	}
 	
