@@ -3,23 +3,23 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.nowonline.qa.testcases.LoginPageTest"/>
-      <class name="com.nowonline.qa.testcases.HomePageTest"/>
-      <class name="com.nowonline.qa.testcases.AddCommandPageTest"/>
-      <class name="com.nowonline.qa.testcases.CheckCommandPageTest"/>
-      <class name="com.nowonline.qa.testcases.MyAssignmentsPageTest"/>
-      <class name="com.nowonline.qa.testcases.CompleteAssignmentTest"/>
-      <class name="com.nowonline.qa.testcases.MatchPageTest"/>
-      <class name="com.nowonline.qa.testcases.AssignmentsPageFreeTest"/>
-      <class name="com.nowonline.qa.testcases.StorePageFreeTest"/>
-      <class name="com.nowonline.qa.testcases.CommunityPageFreeTest"/>
-      <class name="com.nowonline.qa.testcases.MyNetworkPageFreeTest"/>
-      <class name="com.nowonline.qa.testcases.EntrepreneursPageFreeTest"/>
-      <class name="com.nowonline.qa.testcases.BusinessesPageFreeTest"/>
-      <class name="com.nowonline.qa.testcases.HomePageAdminTest"/>
-      <class name="com.nowonline.qa.testcases.AssignmentsPageAdminTest"/>
-      <class name="com.nowonline.qa.testcases.CommunityPageAdminTest"/>
-      <class name="com.nowonline.qa.testcases.MatchPageAdminTest"/>
+      <class name="com.younited.qa.testcases.LoginPageTest"/>
+      <class name="com.younited.qa.testcases.HomePageTest"/>
+      <class name="com.younited.qa.testcases.AddCommandPageTest"/>
+      <class name="com.younited.qa.testcases.CheckCommandPageTest"/>
+      <class name="com.younited.qa.testcases.MyAssignmentsPageTest"/>
+      <class name="com.younited.qa.testcases.CompleteAssignmentTest"/>
+      <class name="com.younited.qa.testcases.MatchPageTest"/>
+      <class name="com.younited.qa.testcases.AssignmentsPageFreeTest"/>
+      <class name="com.younited.qa.testcases.StorePageFreeTest"/>
+      <class name="com.younited.qa.testcases.CommunityPageFreeTest"/>
+      <class name="com.younited.qa.testcases.MyNetworkPageFreeTest"/>
+      <class name="com.younited.qa.testcases.EntrepreneursPageFreeTest"/>
+      <class name="com.younited.qa.testcases.BusinessesPageFreeTest"/>
+      <class name="com.younited.qa.testcases.HomePageAdminTest"/>
+      <class name="com.younited.qa.testcases.AssignmentsPageAdminTest"/>
+      <class name="com.younited.qa.testcases.CommunityPageAdminTest"/>
+      <class name="com.younited.qa.testcases.MatchPageAdminTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
