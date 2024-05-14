@@ -8,9 +8,12 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import com.younited.qa.util.TestUtil;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase {
 
@@ -30,23 +33,30 @@ public class TestBase {
 		}
 	}
 	
-	@SuppressWarnings("deprecation")
-	public void initialization() {
-		String browserName=prop.getProperty("browser");
-		if(browserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
-			Driver=new ChromeDriver();
-		}else if(browserName.equals("FF")) {
-			System.setProperty("webdriver.gecko.driver", "C:\\geckodriver\\geckodriver.exe");
-			Driver=new FirefoxDriver();
-		}
+	public void initialization()throws Exception {
+		//String browserName=prop.getProperty("browser");
+		//if(browserName.equals("chrome")) {
+			//System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
+			//Driver=new ChromeDriver();
+		//}else if(browserName.equals("FF")) {
+			//System.setProperty("webdriver.gecko.driver", "C:\\geckodriver\\geckodriver.exe");
+			//Driver=new FirefoxDriver();
+		//}
 		
-		Driver.manage().window().maximize();
+		ChromeOptions co = new ChromeOptions();
+		//options.addArguments("--headless=new");
+		co.setHeadless(true);
+
+		//Driver = new ChromeDriver(options);
+		Driver=WebDriverManager.chromedriver().capabilities(co).create();
+		
+		//Driver.manage().window().maximize();
 		Driver.manage().deleteAllCookies();
 		Driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		Driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
 		
 		Driver.get(prop.getProperty("url"));
+		Thread.sleep(1000);
 		
 				
 	}
