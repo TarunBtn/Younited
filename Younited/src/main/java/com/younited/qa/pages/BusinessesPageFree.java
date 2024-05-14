@@ -1,5 +1,6 @@
 package com.younited.qa.pages;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -8,7 +9,7 @@ import com.younited.qa.base.TestBase;
 
 public class BusinessesPageFree extends TestBase{
 	//PageFactory OR Object Repository
-    @FindBy(xpath="/html/body/div[1]/main/div/nav/div[1]/div[1]/div[1]/input")
+    @FindBy(id="company-search")
     WebElement filterValue;
     
     @FindBy(xpath="/html/body/div[1]/main/div/nav/div[1]/div[1]/div[2]/a[2]/div[2]/div/span")
@@ -49,7 +50,8 @@ public class BusinessesPageFree extends TestBase{
 	}
 	
 	public void filterValueTooltip() {
-		filterValueTooltip.click();
+		//filterValueTooltip.click();
+		filterValue.sendKeys(Keys.TAB);
 	}
 	
 	public void removeFilter() {
