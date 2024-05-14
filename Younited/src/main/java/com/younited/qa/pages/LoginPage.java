@@ -8,67 +8,66 @@ import com.younited.qa.base.TestBase;
 
 public class LoginPage extends TestBase{
 	//Page factory or Object Repository
-			@FindBy(id="username")
-			WebElement username;
-				
-			@FindBy(id="password")
-			WebElement password;
-				
-			@FindBy(xpath="/html/body/div/main/section/div/div/div/form/div[3]/button")
-			WebElement loginBtn;
-				
-			@FindBy(linkText="Sign up")
-			WebElement signUpLink;
-				
-			@FindBy(id="prompt-logo-center")
-			WebElement imageLogo;
-				
-			//Initialization
-			public LoginPage() {
-				PageFactory.initElements(Driver, this);
-			}
-				
-			//Actions
-			public String validateLoginPageTitle() {
-				return Driver.getTitle();
-			}
-				
-			public boolean validateImageLogo() {
-				return imageLogo.isDisplayed();
-			}
-				
-			public HomePage login(String un, String pwd) {
-				username.sendKeys(un);
-				password.sendKeys(pwd);
-				loginBtn.click();
-					
-				return new HomePage();		
-			}
-				
-			public HomePageFree loginHomePageFree(String un, String pwd) {
-				username.sendKeys(un);
-				password.sendKeys(pwd);
-				loginBtn.click();
-					
-				return new HomePageFree();
-			}
+		@FindBy(id="username")
+		WebElement username;
 			
-			public HomePageAdmin loginHomePageAdmin(String un, String pwd) {
-				username.sendKeys(un);
-				password.sendKeys(pwd);
-				loginBtn.click();
+		@FindBy(id="password")
+		WebElement password;
+			
+		@FindBy(name="action")
+		WebElement loginBtn;
+			
+		@FindBy(linkText="Sign up")
+		WebElement signUpLink;
+			
+		@FindBy(id="prompt-logo-center")
+		WebElement imageLogo;
+			
+		//Initialization
+		public LoginPage() {
+			PageFactory.initElements(Driver, this);
+		}
+			
+		//Actions
+		public String validateLoginPageTitle() {
+			return Driver.getTitle();
+		}
+			
+		public boolean validateImageLogo() {
+			return imageLogo.isDisplayed();
+		}
+			
+		public HomePage login(String un, String pwd) {
+			username.sendKeys(un);
+			password.sendKeys(pwd);
+			loginBtn.click();	
+			return new HomePage();		
+		}
+			
+		public HomePageFree loginHomePageFree(String un, String pwd) {
+			username.sendKeys(un);
+			password.sendKeys(pwd);
+			loginBtn.click();
 				
-				return new HomePageAdmin();
-			}
-				
-			public void enterUserName() {
-				username.sendKeys("lb+acc-opdrachtgever@nowonline.nl");
-			}
-			public void enterPassword() {
-				password.sendKeys("Tester01!");
-			}
-			public void clickLoginBtn() {
-				loginBtn.click();
-			}
+			return new HomePageFree();
+		}
+		
+		public HomePageAdmin loginHomePageAdmin(String un, String pwd) {
+			username.sendKeys(un);
+			password.sendKeys(pwd);
+			loginBtn.click();
+			
+			return new HomePageAdmin();
+		}
+			
+		public void enterUserName() {
+			username.sendKeys("lb+acc-opdrachtgever@nowonline.nl");
+		}
+		public void enterPassword() {
+			password.sendKeys("Tester01!");
+		}
+		public void clickLoginBtn() {
+			loginBtn.click();
+		}
 
 }
