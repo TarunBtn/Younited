@@ -24,21 +24,23 @@ public class LoginPageTest extends TestBase{
 	}
 	
 	@Test(priority=1)
-	public void loginPageTitleTest() {
+	public void loginPageTitleTest()throws Exception {
 		String title=loginPage.validateLoginPageTitle();
 		Assert.assertEquals(title, "Log in | Younited® platform");
+		Thread.sleep(4000);
 	}
 	
 	@Test(priority=2)
-	public void imageLogoTest() {
+	public void imageLogoTest()throws Exception {
 		boolean flag=loginPage.validateImageLogo();
 		Assert.assertTrue(flag);
+		Thread.sleep(4000);
 	}
 	
 	@Test(priority=3)
 	public void loginTest() throws Exception {
 		homePage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
-		Thread.sleep(4000);
+		Thread.sleep(11000);
 	}
 	
 	
