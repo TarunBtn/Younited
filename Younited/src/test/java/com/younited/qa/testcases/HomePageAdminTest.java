@@ -29,7 +29,9 @@ public class HomePageAdminTest extends TestBase{
 		homePageAdmin=loginPage.loginHomePageAdmin(prop.getProperty("usernametwo"), prop.getProperty("passwordtwo"));
 		testUtil.testWaitFourteen();
 		//homePageAdmin.clickAcceptAllCookies();
-		//testUtil.testWaitEight();
+		//testUtil.testWaitEleven();
+		//testUtil.testWaitFour();
+		
 	}
 	
 	@Test
