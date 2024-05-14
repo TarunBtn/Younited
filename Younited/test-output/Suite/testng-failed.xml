@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.younited.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="loginTest"/>
+          <include name="setUp"/>
+          <include name="imageLogoTest"/>
+        </methods>
+      </class> <!-- com.younited.qa.testcases.LoginPageTest -->
+      <class name="com.younited.qa.testcases.HomePageAdminTest">
+        <methods>
+          <include name="test"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.younited.qa.testcases.HomePageAdminTest -->
+      <class name="com.younited.qa.testcases.MatchPageTest">
+        <methods>
+          <include name="matchPage"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.younited.qa.testcases.MatchPageTest -->
+      <class name="com.younited.qa.testcases.StorePageFreeTest">
+        <methods>
+          <include name="clickStoreTab"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.younited.qa.testcases.StorePageFreeTest -->
+      <class name="com.younited.qa.testcases.AddCommandPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="uploadFileTest"/>
+        </methods>
+      </class> <!-- com.younited.qa.testcases.AddCommandPageTest -->
+      <class name="com.younited.qa.testcases.MyNetworkPageFreeTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="myNetworkPageFreeTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.younited.qa.testcases.MyNetworkPageFreeTest -->
+      <class name="com.younited.qa.testcases.MatchPageAdminTest">
+        <methods>
+          <include name="match"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.younited.qa.testcases.MatchPageAdminTest -->
+      <class name="com.younited.qa.testcases.AssignmentsPageAdminTest">
+        <methods>
+          <include name="assignmentsPage"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.younited.qa.testcases.AssignmentsPageAdminTest -->
+      <class name="com.younited.qa.testcases.MyAssignmentsPageTest">
+        <methods>
+          <include name="myAssignmentsPageTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.younited.qa.testcases.MyAssignmentsPageTest -->
+      <class name="com.younited.qa.testcases.AssignmentsPageFreeTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="clickFiltersTest"/>
+        </methods>
+      </class> <!-- com.younited.qa.testcases.AssignmentsPageFreeTest -->
+      <class name="com.younited.qa.testcases.EntrepreneursPageFreeTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="entrepreneurPageFilter"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.younited.qa.testcases.EntrepreneursPageFreeTest -->
+      <class name="com.younited.qa.testcases.BusinessesPageFreeTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="businessesPageFree"/>
+        </methods>
+      </class> <!-- com.younited.qa.testcases.BusinessesPageFreeTest -->
+      <class name="com.younited.qa.testcases.HomePageTest">
+        <methods>
+          <include name="homePageTitleTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="clickMyAssignmentsLinkTest"/>
+          <include name="verifyImageLogoTest"/>
+        </methods>
+      </class> <!-- com.younited.qa.testcases.HomePageTest -->
+      <class name="com.younited.qa.testcases.CommunityPageFreeTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="communityPageFreeTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.younited.qa.testcases.CommunityPageFreeTest -->
+      <class name="com.younited.qa.testcases.CommunityPageAdminTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="community"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.younited.qa.testcases.CommunityPageAdminTest -->
+      <class name="com.younited.qa.testcases.CompleteAssignmentTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="completeAssignmentTest"/>
+        </methods>
+      </class> <!-- com.younited.qa.testcases.CompleteAssignmentTest -->
+      <class name="com.younited.qa.testcases.CheckCommandPageTest">
+        <methods>
+          <include name="checkCommandPageTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.younited.qa.testcases.CheckCommandPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
