@@ -8,7 +8,6 @@
           <include name="tearDown"/>
           <include name="loginTest"/>
           <include name="setUp"/>
-          <include name="loginPageTitleTest"/>
         </methods>
       </class> <!-- com.younited.qa.testcases.LoginPageTest -->
     </classes>
