@@ -31,8 +31,8 @@ public class CommunityPageFreeTest extends TestBase{
 		testUtil=new TestUtil();
 		homePageFree=loginPage.loginHomePageFree(prop.getProperty("usernameone"), prop.getProperty("passwordone"));
 		testUtil.testWaitEleven();
-		homePageFree.clickAcceptAllCookies();
-		testUtil.testWaitEight();
+		//homePageFree.clickAcceptAllCookies();
+		//testUtil.testWaitEight();
 		homePageFree.clickNetworkTab();
 		testUtil.testWaitTwo();
 		homePageFree.clickNetworkTabTooltip();

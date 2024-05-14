@@ -28,8 +28,8 @@ public class HomePageAdminTest extends TestBase{
 		testUtil=new TestUtil();
 		homePageAdmin=loginPage.loginHomePageAdmin(prop.getProperty("usernametwo"), prop.getProperty("passwordtwo"));
 		testUtil.testWaitFourteen();
-		homePageAdmin.clickAcceptAllCookies();
-		testUtil.testWaitEight();
+		//homePageAdmin.clickAcceptAllCookies();
+		//testUtil.testWaitEight();
 	}
 	
 	@Test
