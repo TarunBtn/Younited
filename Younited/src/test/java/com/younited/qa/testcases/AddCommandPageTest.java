@@ -34,13 +34,17 @@ public class AddCommandPageTest extends TestBase{
 		checkCommandPage=new CheckCommandPage();
 		testUtil=new TestUtil();
 		homePage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
-		testUtil.testWaitEight();
+		testUtil.testWaitFourteen();
 		//homePage.clickAcceptAllCookies();
+		//testUtil.testWaitEleven();
+		//homePage.clickReactiesDropDown();
 		//testUtil.testWaitEight();
 		homePage.clickMyAssignmentsLink();
-		testUtil.testWaitEight();
+		testUtil.testWaitFourteen();
 		myAssignmentsPage.clickAddNewCommand();
 		testUtil.testWaitEight();
+		testUtil.scrollDown();
+		testUtil.testWaitFour();
 		
 	}
 	
@@ -48,15 +52,17 @@ public class AddCommandPageTest extends TestBase{
 	public void uploadFileTest()throws Exception {
 		addCommandPage.clickChooseFile();
 		testUtil.testWaitFour();
-		testUtil.uploadFile("D:\\Testfile.docx");
+		testUtil.uploadFile("D:\\CV Jort Zwolsman.doc");
 		testUtil.testWaitEight();
 		checkCommandPage=addCommandPage.clickUploadFile();
 		testUtil.testWaitEight();
+		
 	}
 	
 	@AfterMethod
 	public void tearDown() {
 		Driver.quit();
+		
 	}
 
 }
