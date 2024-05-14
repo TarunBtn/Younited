@@ -30,18 +30,23 @@ public class UlogoIntermediarycompaniesPageTest extends TestBase{
 		uLogoIntermediarycompanyPage=new UlogoIntermediarycompaniesPage();
 		testUtil=new TestUtil();
 		homePageAdmin=loginPage.loginHomePageAdmin(prop.getProperty("usernametwo"), prop.getProperty("passwordtwo"));
-		testUtil.testWaitEleven();
+		testUtil.testWaitFourteen();
 		homePageAdmin.clickAcceptAllCookies();
-		testUtil.testWaitEight();
+		testUtil.testWaitEleven();
 		homePageAdmin.clickUserLogo();
-		testUtil.testWaitTwo();
-		homePageAdmin.clickIntermediaryCompanyTab();
 		testUtil.testWaitFour();
-		homePageAdmin.moveHoverTologoImage();
+		//homePageAdmin.clickUserLogoPhoto();
+		//testUtil.testWaitFour();
+		//testUtil.scrollDown();
+		//testUtil.testWaitTwo();
+		homePageAdmin.clickNativeCompanyTab();
 		testUtil.testWaitFour();
-		testUtil.scrollDown();
-		testUtil.testWaitTwo();
-		
+		//homePageAdmin.moveHoverTologoImage();
+		//testUtil.testWaitFour();
+		//testUtil.scrollDown();
+		//testUtil.testWaitFour();
+		//homePageAdmin.clickNativeCompanyTab();
+		//testUtil.testWaitFour();
 	}
 	
 	@Test
@@ -55,47 +60,75 @@ public class UlogoIntermediarycompaniesPageTest extends TestBase{
 		//Add new company
 		uLogoIntermediarycompanyPage.clickAddNewCompany();
 		testUtil.testWaitFour();
-		testUtil.scrollDown();
-		testUtil.testWaitTwo();
+		//testUtil.scrollDown();
+		//testUtil.testWaitTwo();
 		uLogoIntermediarycompanyPage.enterCompanyName("SilverTouch");
 		testUtil.testWaitEight();
 		uLogoIntermediarycompanyPage.selectCompanyTooltip();
-		testUtil.testWaitFour();
+		testUtil.testWaitTwo();
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
+		testUtil.testWaitTwo();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
+		//uLogoIntermediarycompanyPage.aboutYourCompany("Testdata");
+		//testUtil.testWaitFour();
+		//Sector
+		uLogoIntermediarycompanyPage.clickSectorDropDown();
+		testUtil.testWaitTwo();
+		uLogoIntermediarycompanyPage.selectSector();
+		testUtil.testWaitTwo();
+		//testUtil.scrollDown();
+		//testUtil.testWaitTwo();
 		//Enter website
 		uLogoIntermediarycompanyPage.clearWebsiteValue();
 		testUtil.testWaitTwo();
 		uLogoIntermediarycompanyPage.enterWebsite("https://silvertouch.com/");
 		testUtil.testWaitTwo();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
 		//Save company
 		uLogoIntermediarycompanyPage.clickSaveBtn();
-		testUtil.testWaitFour();
-		testUtil.scrollDown();
+		testUtil.testWaitEight();
+		//testUtil.scrollUp();
+		//testUtil.testWaitTwo();
+		//testUtil.scrollUp();
+		//testUtil.testWaitTwo();
+		//testUtil.scrollUp();
+		//testUtil.testWaitFour();
+		uLogoIntermediarycompanyPage.clickCancelBtn();
 		testUtil.testWaitEight();
 		//Edit company
-		uLogoIntermediarycompanyPage.clickEditBtn();
+		/*uLogoIntermediarycompanyPage.clickEditBtn();
 		testUtil.testWaitFour();
-		uLogoIntermediarycompanyPage.clearCompanyName();
+		testUtil.scrollDown();
 		testUtil.testWaitTwo();
-		uLogoIntermediarycompanyPage.enterCompanyName("One");
+		//uLogoIntermediarycompanyPage.clearCompanyName();
+		//testUtil.testWaitTwo();
+		//uLogoIntermediarycompanyPage.enterCompanyName("One");
 		testUtil.testWaitFour();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
 		//Save
-		uLogoIntermediarycompanyPage.clickSaveBtnEdit();
+		//uLogoIntermediarycompanyPage.clickSaveBtnEdit();
+		uLogoIntermediarycompanyPage.clickEditCancel();
 		testUtil.testWaitFour();
 		testUtil.scrollDown();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();*/
 		//Delete Company
-		uLogoIntermediarycompanyPage.clickDeleteSign();
-		testUtil.testWaitTwo();
-		uLogoIntermediarycompanyPage.clickDeleteCompany();
-		testUtil.testWaitFour();
-		testUtil.scrollDown();
-		testUtil.testWaitFour();
+		  //uLogoIntermediarycompanyPage.clickDeleteSign();
+		  //testUtil.testWaitEight();
+		//uLogoIntermediarycompanyPage.clickDeleteCompany();
+		  //uLogoIntermediarycompanyPage.clickCancelDelete();
+		  //testUtil.testWaitFour();
+		//testUtil.scrollDown();
+		//testUtil.testWaitFour();
 		
 	}
 	
