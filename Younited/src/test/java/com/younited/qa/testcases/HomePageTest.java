@@ -34,7 +34,7 @@ public class HomePageTest extends TestBase{
 		homePage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));		
 		testUtil.testWaitFourteen();
 		//homePage.clickAcceptAllCookies();
-		//testUtil.testWaitEight();
+		//testUtil.testWaitEleven();
 				
 	}
 	
@@ -55,9 +55,11 @@ public class HomePageTest extends TestBase{
 	}
 	
 	@Test(priority=3)
-	public void clickMyAssignmentsLinkTest()throws Exception {
-		myAssignmentsPage=homePage.clickMyAssignmentsLink();
-		testUtil.testWaitFour();
+	public void myAssignmentsPage()throws Exception {
+		//myAssignmentsPage=homePage.clickMyAssignmentsLink();
+		homePage.clickMyAssignmentsLink();
+		testUtil.testWaitFourteen();
+		//testUtil.testWaitEight();
 	}
 	
 	
