@@ -77,7 +77,7 @@ public class TestBaseBrowserStack {
 		Driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		
 		Driver.get(prop.getProperty("url"));
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 	}
 
 	
