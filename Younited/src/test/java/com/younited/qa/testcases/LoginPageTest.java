@@ -14,7 +14,7 @@ import com.younited.qa.util.TestUtil;
 
 public class LoginPageTest extends TestBaseBrowserStack{
 	
-		/*public void doLogin() {
+		public void doLogin() {
 			Driver.get("https://acc-nox-freelancemarktplaats-mobility.azurewebsites.net/");
 			Driver.findElement(By.id("username")).sendKeys("lb+acc-freelancer@nowonline.nl");
 			Driver.findElement(By.id("password")).sendKeys("Tester01!");
@@ -35,10 +35,10 @@ public class LoginPageTest extends TestBaseBrowserStack{
 			boolean status=Driver.findElement(By.xpath("//span[@class='d-flex']")).isDisplayed();
 			Assert.assertTrue(status, "Opdrachtern link is not display");
 			//System.out.println("Test is passed");
-		}*/
+		}
 		
 	
-	LoginPage loginPage;
+	/*LoginPage loginPage;
 	HomePage homePage;
 	TestUtil testUtil;
 
@@ -76,6 +76,6 @@ public class LoginPageTest extends TestBaseBrowserStack{
 	@AfterMethod
 	public void tearDown() {
 		Driver.quit();
-	}
+	}*/
 
 }
