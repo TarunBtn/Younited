@@ -9,9 +9,11 @@
     <classes>
       <class name="com.younited.qa.testcases.LoginPageTest">
         <methods>
+          <include name="checkInventory"/>
           <include name="setUp"/>
           <include name="tearDown"/>
           <include name="checkAssignmentsLink"/>
+          <include name="doLogin"/>
         </methods>
       </class> <!-- com.younited.qa.testcases.LoginPageTest -->
     </classes>
