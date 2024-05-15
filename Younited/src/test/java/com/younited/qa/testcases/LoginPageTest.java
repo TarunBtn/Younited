@@ -7,11 +7,12 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.younited.qa.base.TestBase;
+import com.younited.qa.base.TestBaseBrowserStack;
 import com.younited.qa.pages.HomePage;
 import com.younited.qa.pages.LoginPage;
 import com.younited.qa.util.TestUtil;
 
-public class LoginPageTest extends TestBase{
+public class LoginPageTest extends TestBaseBrowserStack{
 	
 	
 		public void doLogin() {
@@ -32,7 +33,7 @@ public class LoginPageTest extends TestBase{
 		@Test(priority=2)
 		public void checkAssignmentsLink() {
 			doLogin();
-			boolean status=Driver.findElement(By.linkText("Assignments")).isDisplayed();
+			boolean status=Driver.findElement(By.linkText("Opdrachten")).isDisplayed();
 			Assert.assertEquals(true, status);
 			System.out.println("Test is passed");
 		}
