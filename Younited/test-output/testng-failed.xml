@@ -11,7 +11,10 @@
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="checkAssignmentsLink"/>
+          <include name="loginTest"/>
+          <include name="setUp"/>
+          <include name="imageLogoTest"/>
+          <include name="loginPageTitleTest"/>
         </methods>
       </class> <!-- com.younited.qa.testcases.LoginPageTest -->
     </classes>
