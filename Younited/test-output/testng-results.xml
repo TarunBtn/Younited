@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-15T17:55:58 IST" name="TestSuite" finished-at="2024-05-15T17:56:48 IST" duration-ms="49786">
+  <suite started-at="2024-05-15T18:01:24 IST" name="TestSuite" finished-at="2024-05-15T18:03:28 IST" duration-ms="124171">
     <groups>
     </groups>
-    <test started-at="2024-05-15T17:55:58 IST" name="Test" finished-at="2024-05-15T17:56:48 IST" duration-ms="49786">
+    <test started-at="2024-05-15T18:01:24 IST" name="Test" finished-at="2024-05-15T18:03:28 IST" duration-ms="124171">
       <class name="com.younited.qa.testcases.LoginPageTest">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.younited.qa.testcases.LoginPageTest@6340e5f0]" started-at="2024-05-15T17:55:59 IST" name="setUp" finished-at="2024-05-15T17:56:06 IST" duration-ms="7055" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.younited.qa.testcases.LoginPageTest@6340e5f0]" started-at="2024-05-15T18:01:24 IST" name="setUp" finished-at="2024-05-15T18:01:32 IST" duration-ms="7660" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -38,15 +38,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkInventory()[pri:1, instance:com.younited.qa.testcases.LoginPageTest@6340e5f0]" started-at="2024-05-15T17:56:06 IST" name="checkInventory" finished-at="2024-05-15T17:56:18 IST" duration-ms="12594" status="PASS">
+        <test-method signature="checkInventory()[pri:1, instance:com.younited.qa.testcases.LoginPageTest@6340e5f0]" started-at="2024-05-15T18:01:32 IST" name="checkInventory" finished-at="2024-05-15T18:02:42 IST" duration-ms="69861" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkInventory -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.younited.qa.testcases.LoginPageTest@6340e5f0]" started-at="2024-05-15T17:56:18 IST" name="tearDown" finished-at="2024-05-15T17:56:19 IST" duration-ms="1328" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.younited.qa.testcases.LoginPageTest@6340e5f0]" started-at="2024-05-15T18:02:42 IST" name="tearDown" finished-at="2024-05-15T18:02:43 IST" duration-ms="1308" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.younited.qa.testcases.LoginPageTest@6340e5f0]" started-at="2024-05-15T17:56:19 IST" name="setUp" finished-at="2024-05-15T17:56:24 IST" duration-ms="4105" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.younited.qa.testcases.LoginPageTest@6340e5f0]" started-at="2024-05-15T18:02:43 IST" name="setUp" finished-at="2024-05-15T18:02:47 IST" duration-ms="4384" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -77,29 +77,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkAssignmentsLink()[pri:2, instance:com.younited.qa.testcases.LoginPageTest@6340e5f0]" started-at="2024-05-15T17:56:24 IST" name="checkAssignmentsLink" finished-at="2024-05-15T17:56:47 IST" duration-ms="23496" status="FAIL">
+        <test-method signature="checkAssignmentsLink()[pri:2, instance:com.younited.qa.testcases.LoginPageTest@6340e5f0]" started-at="2024-05-15T18:02:47 IST" name="checkAssignmentsLink" finished-at="2024-05-15T18:03:27 IST" duration-ms="39618" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#username"}
+              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Opdrachten"}
   (Session info: chrome=124.0.6367.61)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.8.2', revision: '826dbfc730'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [3505161b175c75663babfd6e836f1047f2c921c7, findElement {using=id, value=username}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.61, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Windows\proxy\scoped_dir...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:2938}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 3505161b175c75663babfd6e836...}
-Session ID: 3505161b175c75663babfd6e836f1047f2c921c7]]>
+Command: [db483928ba16198d609f52fb926ee66eba114ac4, findElement {using=link text, value=Opdrachten}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.61, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Windows\proxy\scoped_dir...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:2865}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: db483928ba16198d609f52fb926...}
+Session ID: db483928ba16198d609f52fb926ee66eba114ac4]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#username"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Opdrachten"}
   (Session info: chrome=124.0.6367.61)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.8.2', revision: '826dbfc730'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [3505161b175c75663babfd6e836f1047f2c921c7, findElement {using=id, value=username}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.61, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Windows\proxy\scoped_dir...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:2938}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 3505161b175c75663babfd6e836...}
-Session ID: 3505161b175c75663babfd6e836f1047f2c921c7
+Command: [db483928ba16198d609f52fb926ee66eba114ac4, findElement {using=link text, value=Opdrachten}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.61, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Windows\proxy\scoped_dir...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:2865}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: db483928ba16198d609f52fb926...}
+Session ID: db483928ba16198d609f52fb926ee66eba114ac4
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -111,11 +111,10 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
 at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at com.younited.qa.testcases.LoginPageTest.doLogin(LoginPageTest.java:20)
-at com.younited.qa.testcases.LoginPageTest.checkAssignmentsLink(LoginPageTest.java:35)
+at com.younited.qa.testcases.LoginPageTest.checkAssignmentsLink(LoginPageTest.java:36)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -145,7 +144,7 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAssignmentsLink -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.younited.qa.testcases.LoginPageTest@6340e5f0]" started-at="2024-05-15T17:56:47 IST" name="tearDown" finished-at="2024-05-15T17:56:48 IST" duration-ms="1164" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.younited.qa.testcases.LoginPageTest@6340e5f0]" started-at="2024-05-15T18:03:27 IST" name="tearDown" finished-at="2024-05-15T18:03:28 IST" duration-ms="1299" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

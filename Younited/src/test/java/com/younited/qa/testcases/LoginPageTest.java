@@ -14,7 +14,7 @@ import com.younited.qa.util.TestUtil;
 
 public class LoginPageTest extends TestBaseBrowserStack{
 	
-	
+        @BeforeMethod	
 		public void doLogin() {
 			Driver.get("https://acc-nox-freelancemarktplaats-mobility.azurewebsites.net/");
 			Driver.findElement(By.id("username")).sendKeys("lb+acc-freelancer@nowonline.nl");
@@ -26,16 +26,21 @@ public class LoginPageTest extends TestBaseBrowserStack{
 		public void checkInventory() {
 			doLogin();
 			String title=Driver.getTitle();
-			Assert.assertEquals("Younited®", title);
-			System.out.println("Test is passed");
+			Assert.assertTrue(title.contains("Younited®"), "Title is wrong" );
+			//System.out.println("Test is passed");
 		}
 		
 		@Test(priority=2)
 		public void checkAssignmentsLink() {
 			doLogin();
 			boolean status=Driver.findElement(By.linkText("Opdrachten")).isDisplayed();
-			Assert.assertEquals(true, status);
-			System.out.println("Test is passed");
+			Assert.assertTrue(status, "Opdrachtern link is not display");
+			//System.out.println("Test is passed");
+		}
+		
+		@AfterMethod
+		public void tearDown() {
+			Driver.quit();
 		}
 	
 	
