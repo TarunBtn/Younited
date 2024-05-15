@@ -21,7 +21,7 @@ public class BusinessesPageFreeTest extends TestBaseBrowserStack{
 		super();
 	}
 	
-	@BeforeMethod
+	//@BeforeMethod
 	public void setUp()throws Exception {
 		initialization();
 		loginPage=new LoginPage();
@@ -75,7 +75,7 @@ public class BusinessesPageFreeTest extends TestBaseBrowserStack{
 		
 	}
 	
-	@AfterMethod
+	//@AfterMethod
 	public void tearDown(){
 		Driver.quit();
 		
