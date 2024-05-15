@@ -17,9 +17,9 @@ public class LoginPageTest extends TestBaseBrowserStack{
         @BeforeMethod	
 		public void doLogin() {
 			Driver.get("https://acc-nox-freelancemarktplaats-mobility.azurewebsites.net/");
-			Driver.findElement(By.xpath("//input[@id='username']")).sendKeys("lb+acc-freelancer@nowonline.nl");
-			Driver.findElement(By.xpath("//input[@id='password']")).sendKeys("Tester01!");
-			Driver.findElement(By.xpath("//button[@class='c4948eaa9 c0e4b94cb c95e154e9 cb1f6bd8f c6e49ae29']")).click();
+			Driver.findElement(By.id("username")).sendKeys("lb+acc-freelancer@nowonline.nl");
+			Driver.findElement(By.id("password")).sendKeys("Tester01!");
+			Driver.findElement(By.name("action")).click();
 		}
 		
 		@Test(priority=1)
