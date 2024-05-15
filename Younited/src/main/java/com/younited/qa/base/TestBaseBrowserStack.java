@@ -1,5 +1,8 @@
 package com.younited.qa.base;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -54,6 +57,29 @@ public class TestBaseBrowserStack {
 		}
 		
 	}
+	
+	public TestBaseBrowserStack() {
+		try {
+			prop=new Properties();
+			FileInputStream ip=new FileInputStream("C:\\Users\\no02\\git\\NowOnline\\NowOnlineOne\\src\\main\\java\\com\""
+					+ "\\nowonline\\qa\\config\\config.properties");
+			prop.load(ip);
+		}catch(FileNotFoundException e) {
+			e.printStackTrace();
+		}catch(IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void initialization() {
+		Driver.manage().window().maximize();
+		Driver.manage().deleteAllCookies();
+		Driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+		Driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		
+		Driver.get(prop.getProperty("url"));
+	}
+
 	
 	@AfterMethod(alwaysRun=true)
 	public void tearDown() {

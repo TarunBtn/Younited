@@ -144,15 +144,15 @@
                   <a name="checkAssignmentsLink">
                   </a> <!-- checkAssignmentsLink -->
                   <span class="method-name">checkAssignmentsLink</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Opdrachten&quot;}
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@class=&apos;d-flex&apos;]&quot;}
   (Session info: chrome=124.0.6367.61)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.8.2&apos;, revision: &apos;826dbfc730&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.19&apos;
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [84950835ac781a2d5744d17b309c3b8c663e708a, findElement {using=link text, value=Opdrachten}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.61, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Windows\proxy\scoped_dir...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:2500}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 84950835ac781a2d5744d17b309...}
-Session ID: 84950835ac781a2d5744d17b309c3b8c663e708a
+Command: [731eb3662ef44952cf5cc29d163bbb4241d4801d, findElement {using=xpath, value=//span[@class=&apos;d-flex&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.61, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Windows\proxy\scoped_dir...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:2826}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 731eb3662ef44952cf5cc29d163...}
+Session ID: 731eb3662ef44952cf5cc29d163bbb4241d4801d
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -270,18 +270,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'checkInventory')
+data.setCell(0, 1, 'checkAssignmentsLink')
 data.setCell(0, 2, 'com.younited.qa.testcases.LoginPageTest')
-data.setCell(0, 3, 104252);
+data.setCell(0, 3, 36483);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'checkAssignmentsLink')
+data.setCell(1, 1, 'checkInventory')
 data.setCell(1, 2, 'com.younited.qa.testcases.LoginPageTest')
-data.setCell(1, 3, 34460);
+data.setCell(1, 3, 14548);
 window.suiteTableData['TestSuite']= { tableData: data, tableDiv: 'times-div-TestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-TestSuite">
               </div> <!-- times-div-TestSuite -->
             </div> <!-- times-div -->
@@ -314,25 +314,25 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkInventory</span>
-                <span class="method-start">6187 ms</span>
+                <span class="method-start">6311 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">110439 ms</span>
+                <span class="method-start">20859 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(Windows, 11, Chrome, latest, public void com.younited.qa.testcases.LoginPageTest.checkAssignmentsLin...)</span>
-                <span class="method-start">111736 ms</span>
+                <span class="method-start">22143 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">checkAssignmentsLink</span>
-                <span class="method-start">118345 ms</span>
+                <span class="method-start">29339 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">152805 ms</span>
+                <span class="method-start">65838 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
