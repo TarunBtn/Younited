@@ -5,12 +5,13 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.younited.qa.base.TestBase;
+import com.younited.qa.base.TestBaseBrowserStack;
 import com.younited.qa.pages.BusinessesPageFree;
 import com.younited.qa.pages.HomePageFree;
 import com.younited.qa.pages.LoginPage;
 import com.younited.qa.util.TestUtil;
 
-public class BusinessesPageFreeTest extends TestBase{
+public class BusinessesPageFreeTest extends TestBaseBrowserStack{
 	LoginPage loginPage;
 	HomePageFree homePageFree;
 	BusinessesPageFree businessesPageFree;
