@@ -16,7 +16,7 @@ public class BusinessesPageFreeTest extends TestBaseBrowserStack{
 	HomePageFree homePageFree;
 	BusinessesPageFree businessesPageFree;
 	TestUtil testUtil;
-	
+
 	public BusinessesPageFreeTest() {
 		super();
 	}
