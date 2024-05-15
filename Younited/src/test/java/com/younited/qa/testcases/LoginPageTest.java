@@ -14,7 +14,7 @@ import com.younited.qa.util.TestUtil;
 
 public class LoginPageTest extends TestBaseBrowserStack{
 	
-        @BeforeMethod	
+	
 		public void doLogin() {
 			Driver.get("https://acc-nox-freelancemarktplaats-mobility.azurewebsites.net/");
 			Driver.findElement(By.id("username")).sendKeys("lb+acc-freelancer@nowonline.nl");
@@ -38,11 +38,6 @@ public class LoginPageTest extends TestBaseBrowserStack{
 			//System.out.println("Test is passed");
 		}
 		
-		@AfterMethod
-		public void tearDown() {
-			Driver.quit();
-		}
-	
 	
 	/*LoginPage loginPage;
 	HomePage homePage;
