@@ -22,7 +22,7 @@ public class BusinessesPageFreeTest extends TestBaseBrowserStack{
 	}
 	
 	//@BeforeMethod
-	public void setUp()throws Exception {
+	public void asetUp()throws Exception {
 		initialization();
 		loginPage=new LoginPage();
 		businessesPageFree=new BusinessesPageFree();
