@@ -33,7 +33,7 @@ public class LoginPageTest extends TestBaseBrowserStack{
 		@Test(priority=2)
 		public void checkAssignmentsLink() {
 			doLogin();
-			boolean status=Driver.findElement(By.linkText("Opdrachten")).isDisplayed();
+			boolean status=Driver.findElement(By.xpath("//span[@class='d-flex']")).isDisplayed();
 			Assert.assertTrue(status, "Opdrachtern link is not display");
 			//System.out.println("Test is passed");
 		}
