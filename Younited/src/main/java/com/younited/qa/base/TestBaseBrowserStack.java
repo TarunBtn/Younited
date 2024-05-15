@@ -70,13 +70,14 @@ public class TestBaseBrowserStack {
 		}
 	}
 	
-	public void initialization() {
+	public void initialization()throws Exception {
 		Driver.manage().window().maximize();
 		Driver.manage().deleteAllCookies();
 		Driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		Driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		
 		Driver.get(prop.getProperty("url"));
+		Thread.sleep(4000);
 	}
 
 	
