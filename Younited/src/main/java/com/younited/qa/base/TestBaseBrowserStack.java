@@ -61,8 +61,7 @@ public class TestBaseBrowserStack {
 	public TestBaseBrowserStack() {
 		try {
 			prop=new Properties();
-			FileInputStream ip=new FileInputStream("C:\\Users\\no02\\git\\NowOnline\\NowOnlineOne\\src\\main\\java\\com\""
-					+ "\\nowonline\\qa\\config\\config.properties");
+			FileInputStream ip=new FileInputStream("C:\\Users\\no02\\git\\Younited\\Younited\\src\\main\\java\\com\\younited\\qa\\config\\config.properties");
 			prop.load(ip);
 		}catch(FileNotFoundException e) {
 			e.printStackTrace();
