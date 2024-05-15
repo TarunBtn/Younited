@@ -10,7 +10,7 @@
       
       
       <classes>
-          <class name="com.nowonline.qa.testcases.LoginPageTest"/>
+          <class name="com.younited.qa.testcases.LoginPageTest"/>
       </classes>
     </test>
 </suite>
