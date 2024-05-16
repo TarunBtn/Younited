@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-16T18:35:50 IST" name="TestSuite" finished-at="2024-05-16T18:36:53 IST" duration-ms="63138">
+  <suite started-at="2024-05-16T19:49:04 IST" name="TestSuite" finished-at="2024-05-16T19:49:55 IST" duration-ms="50820">
     <groups>
     </groups>
-    <test started-at="2024-05-16T18:35:50 IST" name="Test" finished-at="2024-05-16T18:36:53 IST" duration-ms="63138">
-      <class name="com.younited.qa.testcases.LoginPageTest">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.younited.qa.testcases.LoginPageTest@45099dd3]" started-at="2024-05-16T18:35:50 IST" name="setUp" finished-at="2024-05-16T18:35:56 IST" duration-ms="6209" status="PASS">
+    <test started-at="2024-05-16T19:49:04 IST" name="Test" finished-at="2024-05-16T19:49:55 IST" duration-ms="50820">
+      <class name="com.younited.qa.testcases.BusinessesPageFreeTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.younited.qa.testcases.BusinessesPageFreeTest@6340e5f0]" started-at="2024-05-16T19:49:04 IST" name="setUp" finished-at="2024-05-16T19:49:21 IST" duration-ms="16545" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -31,53 +31,14 @@
             </param>
             <param index="4">
               <value>
-                <![CDATA[public void com.younited.qa.testcases.LoginPageTest.checkInventory()]]>
+                <![CDATA[public void com.younited.qa.testcases.BusinessesPageFreeTest.BusinessesPageFreeTest()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkInventory()[pri:1, instance:com.younited.qa.testcases.LoginPageTest@45099dd3]" started-at="2024-05-16T18:35:56 IST" name="checkInventory" finished-at="2024-05-16T18:36:11 IST" duration-ms="15133" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkInventory -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.younited.qa.testcases.LoginPageTest@45099dd3]" started-at="2024-05-16T18:36:11 IST" name="tearDown" finished-at="2024-05-16T18:36:13 IST" duration-ms="1413" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.younited.qa.testcases.LoginPageTest@45099dd3]" started-at="2024-05-16T18:36:13 IST" name="setUp" finished-at="2024-05-16T18:36:18 IST" duration-ms="4791" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[11]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[latest]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[public void com.younited.qa.testcases.LoginPageTest.checkAssignmentsLink()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="checkAssignmentsLink()[pri:2, instance:com.younited.qa.testcases.LoginPageTest@45099dd3]" started-at="2024-05-16T18:36:18 IST" name="checkAssignmentsLink" finished-at="2024-05-16T18:36:52 IST" duration-ms="34066" status="FAIL">
+        <test-method signature="BusinessesPageFreeTest()[pri:0, instance:com.younited.qa.testcases.BusinessesPageFreeTest@6340e5f0]" started-at="2024-05-16T19:49:21 IST" name="BusinessesPageFreeTest" finished-at="2024-05-16T19:49:54 IST" duration-ms="33389" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='d-flex']"}
@@ -86,9 +47,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.8.2', revision: '826dbfc730'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [dd927e06b634200eee93efd176f63d78218a1fa6, findElement {using=xpath, value=//span[@class='d-flex']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.61, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Windows\proxy\scoped_dir...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:7943}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: dd927e06b634200eee93efd176f...}
-Session ID: dd927e06b634200eee93efd176f63d78218a1fa6]]>
+Command: [522a13fb34ea7eef84284736437387b01d1ed9dd, findElement {using=xpath, value=//span[@class='d-flex']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.61, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Windows\proxy\scoped_dir...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:6900}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 522a13fb34ea7eef84284736437...}
+Session ID: 522a13fb34ea7eef84284736437387b01d1ed9dd]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='d-flex']"}
@@ -97,9 +58,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.8.2', revision: '826dbfc730'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [dd927e06b634200eee93efd176f63d78218a1fa6, findElement {using=xpath, value=//span[@class='d-flex']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.61, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Windows\proxy\scoped_dir...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:7943}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: dd927e06b634200eee93efd176f...}
-Session ID: dd927e06b634200eee93efd176f63d78218a1fa6
+Command: [522a13fb34ea7eef84284736437387b01d1ed9dd, findElement {using=xpath, value=//span[@class='d-flex']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.61, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Windows\proxy\scoped_dir...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:6900}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 522a13fb34ea7eef84284736437...}
+Session ID: 522a13fb34ea7eef84284736437387b01d1ed9dd
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -114,7 +75,7 @@ at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(Elemen
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at com.younited.qa.testcases.LoginPageTest.checkAssignmentsLink(LoginPageTest.java:35)
+at com.younited.qa.testcases.BusinessesPageFreeTest.BusinessesPageFreeTest(BusinessesPageFreeTest.java:37)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -148,12 +109,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkAssignmentsLink -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.younited.qa.testcases.LoginPageTest@45099dd3]" started-at="2024-05-16T18:36:52 IST" name="tearDown" finished-at="2024-05-16T18:36:53 IST" duration-ms="1496" status="PASS">
+        </test-method> <!-- BusinessesPageFreeTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.younited.qa.testcases.BusinessesPageFreeTest@6340e5f0]" started-at="2024-05-16T19:49:54 IST" name="tearDown" finished-at="2024-05-16T19:49:55 IST" duration-ms="852" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.younited.qa.testcases.LoginPageTest -->
+      </class> <!-- com.younited.qa.testcases.BusinessesPageFreeTest -->
     </test> <!-- Test -->
   </suite> <!-- TestSuite -->
 </testng-results>

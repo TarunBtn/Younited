@@ -26,6 +26,7 @@ public class BusinessesPageFreeTest extends TestBaseBrowserStack{
 	
 	public void doLogin() {
 		Driver.get("https://acc-nox-freelancemarktplaats-mobility.azurewebsites.net/");
+		Driver.manage().window().maximize();
 		Driver.findElement(By.id("username")).sendKeys("lb+acc-freelancer@nowonline.nl");
 		Driver.findElement(By.id("password")).sendKeys("Tester01!");
 		Driver.findElement(By.name("action")).click();
