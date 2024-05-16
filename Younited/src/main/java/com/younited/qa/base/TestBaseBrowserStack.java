@@ -22,11 +22,11 @@ public class TestBaseBrowserStack {
 	
 	public static WebDriver Driver;
 	public static Properties prop;
-	/*public static final String USERNAME="tarunbutani_PiOvc9";
+	public static final String USERNAME="tarunbutani_PiOvc9";
 	public static final String AUTOMATE_KEY="jpizFmPN3srPvMn6uf39";
 	public static final String URL="https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
 	
-	@Parameters({"os", "osVersion", "browserName", "browserVersion"})
+	/*@Parameters({"os", "osVersion", "browserName", "browserVersion"})
 	@BeforeMethod
 	public void setUp(String os, String osVersion, String browserName, String browserVersion, Method name) {
 		
