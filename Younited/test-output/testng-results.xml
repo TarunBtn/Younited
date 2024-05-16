@@ -2,43 +2,12 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-16T15:56:21 IST" name="TestSuite" finished-at="2024-05-16T15:56:28 IST" duration-ms="6963">
+  <suite started-at="2024-05-16T16:06:31 IST" name="Default suite" finished-at="2024-05-16T16:06:31 IST" duration-ms="24">
     <groups>
     </groups>
-    <test started-at="2024-05-16T15:56:21 IST" name="Test" finished-at="2024-05-16T15:56:28 IST" duration-ms="6963">
+    <test started-at="2024-05-16T16:06:31 IST" name="Default test" finished-at="2024-05-16T16:06:31 IST" duration-ms="24">
       <class name="com.younited.qa.testcases.BusinessesPageFreeTest">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.younited.qa.testcases.BusinessesPageFreeTest@6340e5f0]" started-at="2024-05-16T15:56:21 IST" name="setUp" finished-at="2024-05-16T15:56:26 IST" duration-ms="5677" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[11]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[latest]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[public void com.younited.qa.testcases.BusinessesPageFreeTest.businessesPageFree() throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="businessesPageFree()[pri:0, instance:com.younited.qa.testcases.BusinessesPageFreeTest@6340e5f0]" started-at="2024-05-16T15:56:26 IST" name="businessesPageFree" finished-at="2024-05-16T15:56:26 IST" duration-ms="4" status="FAIL">
+        <test-method signature="businessesPageFree()[pri:0, instance:com.younited.qa.testcases.BusinessesPageFreeTest@1e0b4072]" started-at="2024-05-16T16:06:31 IST" name="businessesPageFree" finished-at="2024-05-16T16:06:31 IST" duration-ms="6" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -77,11 +46,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- businessesPageFree -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.younited.qa.testcases.BusinessesPageFreeTest@6340e5f0]" started-at="2024-05-16T15:56:26 IST" name="tearDown" finished-at="2024-05-16T15:56:28 IST" duration-ms="1256" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
       </class> <!-- com.younited.qa.testcases.BusinessesPageFreeTest -->
-    </test> <!-- Test -->
-  </suite> <!-- TestSuite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
