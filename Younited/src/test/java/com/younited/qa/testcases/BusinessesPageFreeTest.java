@@ -27,47 +27,11 @@ public class BusinessesPageFreeTest extends TestBaseBrowserStack{
 	BusinessesPageFree businessesPageFree;
 	TestUtil testUtil;
 	
-	/*public static final String USERNAME="tarunbutani_PiOvc9";
-	public static final String AUTOMATE_KEY="jpizFmPN3srPvMn6uf39";
-	public static final String URL="https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";*/
-	
-	@Parameters({"os", "osVersion", "browserName", "browserVersion"})
-	@BeforeMethod
-	public void setUp(String os, String osVersion, String browserName, String browserVersion, Method name) {
-		
-		System.out.println("Browser name is: "+browserName);
-		String methodName=name.getName();
-		
-		DesiredCapabilities caps=new DesiredCapabilities();
-		
-		caps.setCapability("os", os);
-		caps.setCapability("osVersion", osVersion);
-		caps.setCapability("browserName", "Chrome");
-		caps.setCapability("browserVersion", browserVersion);
-		caps.setCapability("name", methodName);
-		
-		if(browserName.equals("chrome")) {
-			WebDriverManager.chromedriver().setup();
-			caps.setCapability("browser", "Chrome");
-		}else if(browserName.equals("firefox")) {
-			WebDriverManager.firefoxdriver().setup();
-			caps.setCapability("browser", "Firefox");
-		}
-		
-		try {
-			Driver=new RemoteWebDriver(new URL(URL), caps);
-			Driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);		
-		}catch(MalformedURLException e) {
-			e.printStackTrace();
-		}
-		
-	}
-
 	public BusinessesPageFreeTest() {
 		super();
 	}
 	
-	//@BeforeMethod
+	@BeforeMethod
 	public void setUp()throws Exception {
 		initialization();
 		loginPage=new LoginPage();
@@ -121,7 +85,7 @@ public class BusinessesPageFreeTest extends TestBaseBrowserStack{
 		
 	}
 	
-	//@AfterMethod
+	@AfterMethod
 	public void tearDown(){
 		Driver.quit();
 		

@@ -26,7 +26,7 @@ public class TestBaseBrowserStack {
 	public static final String AUTOMATE_KEY="jpizFmPN3srPvMn6uf39";
 	public static final String URL="https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
 	
-	/*@Parameters({"os", "osVersion", "browserName", "browserVersion"})
+	@Parameters({"os", "osVersion", "browserName", "browserVersion"})
 	@BeforeMethod
 	public void setUp(String os, String osVersion, String browserName, String browserVersion, Method name) {
 		
@@ -56,7 +56,7 @@ public class TestBaseBrowserStack {
 			e.printStackTrace();
 		}
 		
-	}*/
+	}
 	
 	public TestBaseBrowserStack() {
 		try {
