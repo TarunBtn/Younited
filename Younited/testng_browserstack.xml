@@ -9,7 +9,7 @@
       <parameter name="browserVersion" value="latest"/>
       
       <classes>
-          <class name="com.younited.qa.testcases.BusinessesPageTest"/>
+          <class name="com.younited.qa.testcases.BusinessesPageFreeTest"/>
       </classes>
     </test>
 </suite>
