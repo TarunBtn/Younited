@@ -32,7 +32,7 @@ public class BusinessesPageFreeTest extends TestBaseBrowserStack{
 	public static final String URL="https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";*/
 	
 	@Parameters({"os", "osVersion", "browserName", "browserVersion"})
-	//@BeforeMethod
+	@BeforeMethod
 	public void setUp(String os, String osVersion, String browserName, String browserVersion, Method name) {
 		
 		System.out.println("Browser name is: "+browserName);
@@ -84,7 +84,7 @@ public class BusinessesPageFreeTest extends TestBaseBrowserStack{
 				
 	}
 	
-	//@Test
+	@Test
 	public void businessesPageFree()throws Exception {
 		//Filter value
 		businessesPageFree.filterValue("Apex");
