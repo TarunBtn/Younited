@@ -7,12 +7,13 @@
     <parameter name="browserVersion" value="latest"/>
     <parameter name="browserName" value="Chrome"/>
     <classes>
-      <class name="com.younited.qa.testcases.BusinessesPageFreeTest">
+      <class name="com.younited.qa.testcases.LoginPageTest">
         <methods>
           <include name="setUp"/>
-          <include name="businessesPageFree"/>
+          <include name="tearDown"/>
+          <include name="checkAssignmentsLink"/>
         </methods>
-      </class> <!-- com.younited.qa.testcases.BusinessesPageFreeTest -->
+      </class> <!-- com.younited.qa.testcases.LoginPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [TestSuite] -->

@@ -5,6 +5,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterMethod;
@@ -22,7 +23,29 @@ import com.younited.qa.util.TestUtil;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BusinessesPageFreeTest extends TestBaseBrowserStack{
-	LoginPage loginPage;
+	
+	public void doLogin() {
+		Driver.get("https://acc-nox-freelancemarktplaats-mobility.azurewebsites.net/");
+		Driver.findElement(By.id("username")).sendKeys("lb+acc-freelancer@nowonline.nl");
+		Driver.findElement(By.id("password")).sendKeys("Tester01!");
+		Driver.findElement(By.name("action")).click();
+	}
+		
+		@Test
+		public void BusinessesPageFreeTest() {
+			doLogin();
+			Driver.findElement(By.xpath("//span[@class='d-flex']")).click();
+			Driver.findElement(By.xpath("//input[@id='assignment-search']")).click();
+			Driver.findElement(By.xpath("//input[@id='assignment-search']")).sendKeys("Apex");
+			Driver.findElement(By.xpath("//strong[normalize-space()='(Alle Resultaten)']")).click();
+			
+			
+		}
+		
+	
+	
+	
+	/*LoginPage loginPage;
 	HomePageFree homePageFree;
 	BusinessesPageFree businessesPageFree;
 	TestUtil testUtil;
@@ -83,7 +106,7 @@ public class BusinessesPageFreeTest extends TestBaseBrowserStack{
 		businessesPageFree.clickSortingDropDown();
 		testUtil.testWaitFour();
 		
-	}
+	}*/
 	
 	@AfterMethod
 	public void tearDown(){
