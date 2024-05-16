@@ -121,7 +121,7 @@ public class BusinessesPageFreeTest extends TestBaseBrowserStack{
 		
 	}
 	
-	@AfterMethod
+	//@AfterMethod
 	public void tearDown(){
 		Driver.quit();
 		
