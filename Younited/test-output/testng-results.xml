@@ -2,12 +2,43 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-16T16:06:31 IST" name="Default suite" finished-at="2024-05-16T16:06:31 IST" duration-ms="24">
+  <suite started-at="2024-05-16T16:11:00 IST" name="TestSuite" finished-at="2024-05-16T16:11:06 IST" duration-ms="6028">
     <groups>
     </groups>
-    <test started-at="2024-05-16T16:06:31 IST" name="Default test" finished-at="2024-05-16T16:06:31 IST" duration-ms="24">
+    <test started-at="2024-05-16T16:11:00 IST" name="Test" finished-at="2024-05-16T16:11:06 IST" duration-ms="6028">
       <class name="com.younited.qa.testcases.BusinessesPageFreeTest">
-        <test-method signature="businessesPageFree()[pri:0, instance:com.younited.qa.testcases.BusinessesPageFreeTest@1e0b4072]" started-at="2024-05-16T16:06:31 IST" name="businessesPageFree" finished-at="2024-05-16T16:06:31 IST" duration-ms="6" status="FAIL">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.younited.qa.testcases.BusinessesPageFreeTest@6340e5f0]" started-at="2024-05-16T16:11:00 IST" name="setUp" finished-at="2024-05-16T16:11:06 IST" duration-ms="5996" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[latest]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[public void com.younited.qa.testcases.BusinessesPageFreeTest.businessesPageFree() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="businessesPageFree()[pri:0, instance:com.younited.qa.testcases.BusinessesPageFreeTest@6340e5f0]" started-at="2024-05-16T16:11:06 IST" name="businessesPageFree" finished-at="2024-05-16T16:11:06 IST" duration-ms="5" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -47,6 +78,6 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- businessesPageFree -->
       </class> <!-- com.younited.qa.testcases.BusinessesPageFreeTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- TestSuite -->
 </testng-results>

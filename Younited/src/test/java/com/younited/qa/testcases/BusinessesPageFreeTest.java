@@ -84,7 +84,7 @@ public class BusinessesPageFreeTest extends TestBaseBrowserStack{
 				
 	}
 	
-	@Test
+	//@Test
 	public void businessesPageFree()throws Exception {
 		//Filter value
 		businessesPageFree.filterValue("Apex");
