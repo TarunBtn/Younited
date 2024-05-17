@@ -6,8 +6,10 @@ import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
@@ -36,9 +38,17 @@ public class BusinessesPageFreeTest extends TestBaseBrowserStack{
 		public void BusinessesPageFreeTest() {
 			doLogin();
 			Driver.findElement(By.xpath("//span[@class='d-flex']")).click();
-			Driver.findElement(By.xpath("//input[@id='assignment-search']")).click();
-			Driver.findElement(By.xpath("//input[@id='assignment-search']")).sendKeys("Apex");
-			Driver.findElement(By.xpath("//strong[normalize-space()='(Alle Resultaten)']")).click();
+			Driver.findElement(By.xpath("//a[@class='nav-link active']")).click();
+			Driver.findElement(By.xpath("company-search")).sendKeys("Apex");
+			Driver.findElement(By.xpath("//span[@class='simple-typeahead-list-item-text']")).click();
+			Driver.findElement(By.xpath("//span[@class='material-icons clear-icon']")).click();
+			//Sorting dropdown
+			Driver.findElement(By.xpath("//select[@class='custom-select inverted-select-bg']")).click();
+			Driver.findElement(By.xpath("//*[@id=\"assignment-sorting\"]/div/select/option[2]']")).click();
+			Driver.findElement(By.xpath("//*[@id=\"assignment-sorting\"]/div/select/option[3]")).click();
+			Driver.findElement(By.xpath("//*[@id=\"assignment-sorting\"]/div/select/option[4]")).click();
+			Driver.findElement(By.xpath("//*[@id=\"assignment-sorting\"]/div/select/option[1]")).click();
+			Driver.quit();
 			
 			
 		}
