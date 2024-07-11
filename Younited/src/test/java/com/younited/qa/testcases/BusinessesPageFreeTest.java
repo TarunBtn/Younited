@@ -26,7 +26,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BusinessesPageFreeTest extends TestBaseBrowserStack{
 	
-	public void doLogin() {
+	/*public void doLogin() {
 		Driver.get("https://acc-nox-freelancemarktplaats-mobility.azurewebsites.net/");
 		Driver.manage().window().maximize();
 		Driver.findElement(By.id("username")).sendKeys("lb+acc-freelancer@nowonline.nl");
@@ -51,12 +51,10 @@ public class BusinessesPageFreeTest extends TestBaseBrowserStack{
 			Driver.quit();
 			
 			
-		}
+		}*/
 		
 	
-	
-	
-	/*LoginPage loginPage;
+	LoginPage loginPage;
 	HomePageFree homePageFree;
 	BusinessesPageFree businessesPageFree;
 	TestUtil testUtil;
@@ -117,7 +115,7 @@ public class BusinessesPageFreeTest extends TestBaseBrowserStack{
 		businessesPageFree.clickSortingDropDown();
 		testUtil.testWaitFour();
 		
-	}*/
+	}
 	
 	@AfterMethod
 	public void tearDown(){
