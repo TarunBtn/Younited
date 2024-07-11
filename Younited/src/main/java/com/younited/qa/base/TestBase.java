@@ -37,18 +37,19 @@ public class TestBase {
 		String browserName=prop.getProperty("browser");
 		if(browserName.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
-			Driver=new ChromeDriver();
+			//WebDriverManager.chromedriver().setup();
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--headless");
+			options.addArguments("--no-sandbox");
+			options.addArguments("--disable-dev-shm-usage");
+			options.addArguments("--disable-gpu");
+			options.addArguments("--window-size=1920,1080");
+			Driver=new ChromeDriver(options);
+			//Driver=new ChromeDriver();
 		}else if(browserName.equals("FF")) {
 			System.setProperty("webdriver.gecko.driver", "C:\\geckodriver\\geckodriver.exe");
 			Driver=new FirefoxDriver();
 		}
-		
-		//ChromeOptions co = new ChromeOptions();
-		//options.addArguments("--headless=new");
-		//co.setHeadless(true);
-
-		//Driver = new ChromeDriver(options);
-		//Driver=WebDriverManager.chromedriver().capabilities(co).create();
 		
 		Driver.manage().window().maximize();
 		Driver.manage().deleteAllCookies();
