@@ -24,7 +24,7 @@ import com.younited.qa.util.TestUtil;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class BusinessesPageFreeTest extends TestBaseBrowserStack{
+public class BusinessesPageFreeTest extends TestBase{
 	
 	/*public void doLogin() {
 		Driver.get("https://acc-nox-freelancemarktplaats-mobility.azurewebsites.net/");
