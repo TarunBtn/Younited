@@ -44,9 +44,11 @@ public class CheckCommandPageTest extends TestBase{
 		homePage.clickMyAssignmentsLink();
 		testUtil.testWaitFourteen();
 		myAssignmentsPage.clickAddNewCommand();
-		testUtil.testWaitEleven();
-		addCommandPage.clickChooseFile();
+		testUtil.testWaitEight();
+		testUtil.scrollDown();
 		testUtil.testWaitFour();
+		addCommandPage.clickChooseFile();
+		testUtil.testWaitEight();
 		testUtil.uploadFile("D:\\Testfile.docx");
 		testUtil.testWaitEight();
 		addCommandPage.clickUploadFile();
@@ -56,14 +58,14 @@ public class CheckCommandPageTest extends TestBase{
 	
 	@Test
 	public void checkCommandPageTest()throws Exception {
-		completeAssignment=checkCommandPage.clickFillInComplete();
+		checkCommandPage.clickFillInComplete();
 		testUtil.testWaitEight();
 	}
 	
 	
 	@AfterMethod
 	public void tearDown() {
-		Driver.quit();
+		//Driver.quit();
 	}
 
 }
