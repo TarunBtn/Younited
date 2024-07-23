@@ -38,13 +38,12 @@ public class CheckCommandPageTest extends TestBase{
 		completeAssignment=new CompleteAssignment();
 		testUtil=new TestUtil();
 		homePage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
-		testUtil.testWaitEleven();
+		testUtil.testWaitFourteen();
 		//homePage.clickAcceptAllCookies();
 		//testUtil.testWaitEight();
 		homePage.clickMyAssignmentsLink();
-		testUtil.testWaitEleven();
-		testUtil.testWaitEleven();
-		addCommandPage=myAssignmentsPage.clickAddNewCommand();
+		testUtil.testWaitFourteen();
+		myAssignmentsPage.clickAddNewCommand();
 		testUtil.testWaitEleven();
 		addCommandPage.clickChooseFile();
 		testUtil.testWaitFour();
