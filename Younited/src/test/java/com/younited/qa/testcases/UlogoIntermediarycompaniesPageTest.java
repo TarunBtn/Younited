@@ -31,8 +31,8 @@ public class UlogoIntermediarycompaniesPageTest extends TestBase{
 		testUtil=new TestUtil();
 		homePageAdmin=loginPage.loginHomePageAdmin(prop.getProperty("usernametwo"), prop.getProperty("passwordtwo"));
 		testUtil.testWaitFourteen();
-		homePageAdmin.clickAcceptAllCookies();
-		testUtil.testWaitEleven();
+		//homePageAdmin.clickAcceptAllCookies();
+		//testUtil.testWaitEleven();
 		homePageAdmin.clickUserLogo();
 		testUtil.testWaitFour();
 		//homePageAdmin.clickUserLogoPhoto();
@@ -40,7 +40,7 @@ public class UlogoIntermediarycompaniesPageTest extends TestBase{
 		//testUtil.scrollDown();
 		//testUtil.testWaitTwo();
 		homePageAdmin.clickNativeCompanyTab();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		//homePageAdmin.moveHoverTologoImage();
 		//testUtil.testWaitFour();
 		//testUtil.scrollDown();
@@ -129,6 +129,10 @@ public class UlogoIntermediarycompaniesPageTest extends TestBase{
 		  //testUtil.testWaitFour();
 		//testUtil.scrollDown();
 		//testUtil.testWaitFour();
+		homePageAdmin.clickSignOutLink();
+	  	testUtil.testWaitFour();
+	  	homePageAdmin.clickSignOutBtn();
+	  	testUtil.testWaitFour();
 		
 	}
 	
