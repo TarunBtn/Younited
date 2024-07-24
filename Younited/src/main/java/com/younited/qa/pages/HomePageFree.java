@@ -30,7 +30,7 @@ public class HomePageFree extends TestBase{
 			@FindBy(xpath="//a[@href='/community']")
 			WebElement communityTab;
 			
-			@FindBy(xpath="//a[@href='/community-volgers']")
+			@FindBy(xpath="//a[normalize-space()='Ondernemers']")
 			WebElement entrepreneurTab;
 			
 			@FindBy(xpath="//a[normalize-space()='Bedrijven']")
