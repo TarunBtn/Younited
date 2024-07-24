@@ -32,14 +32,16 @@ public class MyAssignmentsPageTest extends TestBase{
 		testUtil=new TestUtil();
 		homePage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 		testUtil.testWaitFourteen();
-		homePage.clickAcceptAllCookies();
-		testUtil.testWaitEight();		
+		//homePage.clickAcceptAllCookies();
+		//testUtil.testWaitEleven();		
 		homePage.clickMyAssignmentsLink();
 		testUtil.testWaitEleven();
-		testUtil.testWaitEight();
+		//testUtil.testWaitEight();
 		//checkCommandPage=new CheckCommandPage();
 		testUtil.scrollDown();
-		testUtil.testWaitFour();
+		testUtil.testWaitTwo();
+		testUtil.scrollUp();
+		testUtil.testWaitTwo();
 													
 	}
 	
@@ -50,23 +52,39 @@ public class MyAssignmentsPageTest extends TestBase{
 		myAssignmentsPage.clickResetFilter();
 		testUtil.testWaitEleven();
 		myAssignmentsPage.clickChooseCompanyDropDown();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		myAssignmentsPage.selectCompanyFromDropDown();
 		testUtil.testWaitFour();
 		myAssignmentsPage.clickChooseCompanyDropDown();
 		testUtil.testWaitTwo();
-		myAssignmentsPage.StatusDropDown();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
+		testUtil.scrollUp();
+		testUtil.testWaitTwo();
+		myAssignmentsPage.clickStatusDropDown();
 		testUtil.testWaitFour();
-		myAssignmentsPage.selectStatusFromDropDown();
-		testUtil.testWaitFour();
-		myAssignmentsPage.StatusDropDown();
-		testUtil.testWaitFour();
-		myAssignmentsPage.StatusDropDown();
+		myAssignmentsPage.selectStatusFromDropDownOpen();
+		testUtil.testWaitEight();
+		//myAssignmentsPage.StatusDropDown();
+		//testUtil.testWaitFour();
+		//myAssignmentsPage.selectStatusFromDropDownClosed();
+		//testUtil.testWaitFour();
+		myAssignmentsPage.clickStatusDropDown();
+		testUtil.testWaitTwo();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
+		testUtil.scrollUp();
+		testUtil.testWaitTwo();
+		myAssignmentsPage.clickStatusDropDown();
 		testUtil.testWaitFour();
 		myAssignmentsPage.clearStatusFromDropDown();
 		testUtil.testWaitFour();
-		myAssignmentsPage.StatusDropDown();
+		myAssignmentsPage.clickStatusDropDown();
 		testUtil.testWaitTwo();
+		homePage.clickSignOutLink();
+		testUtil.testWaitFour();
+		homePage.clickSignOutBtn();
+		testUtil.testWaitFour();
 	}
 	
 	@AfterMethod
