@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -23,8 +24,7 @@ public class TestBase {
 	public TestBase() {
 		try {
 			prop=new Properties();
-			FileInputStream ip=new FileInputStream("C:\\Users\\no02\\git\\Younited\\Younited\\src\\"
-					+ "main\\java\\com\\younited\\qa\\config\\config.properties");
+			FileInputStream ip=new FileInputStream("C:\\chromedriver\\Git\\config.properties");
 			prop.load(ip);
 		}catch(FileNotFoundException e) {
 			e.printStackTrace();
@@ -55,9 +55,13 @@ public class TestBase {
 		Driver.manage().deleteAllCookies();
 		Driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		Driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
-		Thread.sleep(2000);
-		Driver.get(prop.getProperty("url"));
-		Thread.sleep(2000);
+		Thread.sleep(4000);
+		try {
+		    Driver.get(prop.getProperty("url"));
+		}catch(TimeoutException e) {
+			e.printStackTrace();
+		}
+		Thread.sleep(4000);	
 		
 				
 	}
