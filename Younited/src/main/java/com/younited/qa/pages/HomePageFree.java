@@ -51,6 +51,9 @@ public class HomePageFree extends TestBase{
 			@FindBy(xpath="//a[normalize-space()='Mijn bedrijf/bedrijven']")
 			WebElement myCompany;
 			
+			@FindBy(xpath="//a[normalize-space()='Mijn reacties']")
+			WebElement myReactionsTab;
+			
 			@FindBy(xpath="//a[@class='user-infoNav-item-link logout']//span[@class='material-icons'][normalize-space()='logout']")
 			WebElement signOutLink;
 			
@@ -124,6 +127,10 @@ public class HomePageFree extends TestBase{
 			
 			public void clickMyCompanyTab() {
 				myCompany.click();
+			}
+			
+			public void clickMyReactionsTab() {
+				myReactionsTab.click();
 			}
 			
 			public void clickSignOutLink() {
