@@ -27,24 +27,37 @@ public class UlogoMyreactionsPageTest extends TestBase{
 		uLogoMyreactionsPage=new UlogoMyreactionsPage();
 		testUtil=new TestUtil();
 		homePageAdmin=loginPage.loginHomePageAdmin(prop.getProperty("usernametwo"), prop.getProperty("passwordtwo"));
-		testUtil.testWaitEight();
-		homePageAdmin.clickAcceptAllCookies();
-		testUtil.testWaitEight();
+		testUtil.testWaitFourteen();
+		//homePageAdmin.clickAcceptAllCookies();
+		//testUtil.testWaitEleven();
 		homePageAdmin.clickUserLogo();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		homePageAdmin.clickMyReactionsTab();
 		testUtil.testWaitFour();
+		
 		
 	}
 	
 	@Test
 	public void uLogoMyreactionsPageTest()throws Exception {
-		uLogoMyreactionsPage.clickSuggestedResponses();
-		testUtil.testWaitEight();
-		uLogoMyreactionsPage.clickMyRunningReactions();
-		testUtil.testWaitEight();
-		uLogoMyreactionsPage.clickResponseHistory();
-		testUtil.testWaitEight();
+		//uLogoMyreactionsPage.clickSuggestedResponses();
+		//testUtil.testWaitEight();
+		//uLogoMyreactionsPage.clickViewAssignment();
+		//testUtil.testWaitFourteen();
+		//uLogoMyreactionsPage.clickResponseHistory();
+		//testUtil.testWaitEight();
+		uLogoMyreactionsPage.clickMyReactionsLogo();
+		testUtil.testWaitTwo();
+		uLogoMyreactionsPage.clickCheckBox();
+		testUtil.testWaitTwo();
+		uLogoMyreactionsPage.clickStatusDropDown();
+		testUtil.testWaitTwo();
+		uLogoMyreactionsPage.selectStatusDropDown();
+		testUtil.testWaitFour();
+		homePageAdmin.clickSignOutLink();
+	  	testUtil.testWaitFour();
+	  	homePageAdmin.clickSignOutBtn();
+	  	testUtil.testWaitFour();
 	}
 	
 	@AfterMethod
