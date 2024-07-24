@@ -28,15 +28,15 @@ public class UlogoAllassignmentsPageTest extends TestBase{
 		uLogoAllassignmentsPage=new UlogoAllassignmentsPage();
 		testUtil=new TestUtil();
 		homePageAdmin=loginPage.loginHomePageAdmin(prop.getProperty("usernametwo"), prop.getProperty("passwordtwo"));
-		testUtil.testWaitEleven();
-		homePageAdmin.clickAcceptAllCookies();
-		testUtil.testWaitEight();
+		testUtil.testWaitFourteen();
+		//homePageAdmin.clickAcceptAllCookies();
+		//testUtil.testWaitEleven();
 		homePageAdmin.clickUserLogo();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		homePageAdmin.clickAllassignmentsTab();
-		testUtil.testWaitFour();
-		homePageAdmin.moveHoverTologoImage();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
+		//homePageAdmin.moveHoverTologoImage();
+		//testUtil.testWaitFour();
 		
 	}
 	
@@ -48,18 +48,34 @@ public class UlogoAllassignmentsPageTest extends TestBase{
 		testUtil.testWaitFour();
 		testUtil.scrollUp();
 		testUtil.testWaitFour();
-		uLogoAllassignmentsPage.clickExactSearch();
-		testUtil.testWaitFour();
-		uLogoAllassignmentsPage.clickExactSearch();
-		testUtil.testWaitFour();
+		//uLogoAllassignmentsPage.clickExactSearch();
+		//testUtil.testWaitFour();
+		//uLogoAllassignmentsPage.clickExactSearch();
+		//testUtil.testWaitFour();
 		uLogoAllassignmentsPage.clickResetCompany();
+		testUtil.testWaitEight();
+		uLogoAllassignmentsPage.clickStatusDropDown();
 		testUtil.testWaitFour();
+		uLogoAllassignmentsPage.selectStatusDropDown();
+		testUtil.testWaitFour();
+		testUtil.scrollDown();
+		testUtil.testWaitTwo();
+		testUtil.scrollUp();
+		testUtil.testWaitTwo();
+		uLogoAllassignmentsPage.clickStatusDropDown();
+		testUtil.testWaitFour();
+		uLogoAllassignmentsPage.clickResetStatusDropDown();
+		testUtil.testWaitEight();
 		uLogoAllassignmentsPage.clickFilterDropDown();
 		testUtil.testWaitTwo();
 		uLogoAllassignmentsPage.selectFilterDropDown();
 		testUtil.testWaitEight();
-		
-		
+		//uLogoAllassignmentsPage.clickFilterDropDown();
+		homePageAdmin.clickSignOutLink();
+	  	testUtil.testWaitFour();
+	  	homePageAdmin.clickSignOutBtn();
+	  	testUtil.testWaitEight();
+				
 	}
 	
 	@AfterMethod
