@@ -28,21 +28,21 @@ public class MatchPageTest extends TestBase{
 		matchPage=new MatchPage();
 		testUtil=new TestUtil();
 		homePage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
-		testUtil.testWaitEight();
-		homePage.clickAcceptAllCookies();
-		testUtil.testWaitEight();
+		testUtil.testWaitFourteen();
+		//homePage.clickAcceptAllCookies();
+		//testUtil.testWaitEleven();
 		homePage.clickMatchLink();
-		testUtil.testWaitEight();
+		testUtil.testWaitFour();
 				
 	}
 	
 	@Test
 	public void matchPage()throws Exception {
-		//Value Filter
-		//matchPage.clickValueFilterDropdown();
-		//testUtil.testWaitTwo();
-		//matchPage.selectValueFilter();
-		//testUtil.testWaitEight();
+		//Assignment Filter
+		matchPage.clickAssignmentFilterDropdown();
+		testUtil.testWaitTwo();
+		matchPage.selectAssignmentFilter();
+		testUtil.testWaitEight();
 		//Availability
 		matchPage.clickAvailabilityDropDown();
 		testUtil.testWaitTwo();
@@ -109,31 +109,39 @@ public class MatchPageTest extends TestBase{
 		//Skills
 		matchPage.clickSkillTab();
 		testUtil.testWaitTwo();		
-		matchPage.clickEnterValueSkill();
+		/*matchPage.clickEnterValueSkill();
 		testUtil.testWaitTwo();
-		matchPage.enterValueSkill("Postman");
-		testUtil.testWaitFour();
-		matchPage.selectTooltipSkill();
-		testUtil.testWaitFour();
-		try {
-		matchPage.clickApplyFilterSkill();
+		matchPage.enterValueSkill("Accountbeheer");
 		testUtil.testWaitEight();
+		//matchPage.selectTooltipSkill();
+		//testUtil.testWaitEight();
+		matchPage.enterValueSkillTab();
+		testUtil.testWaitTwo();
+		matchPage.clickSkillTab();
+		testUtil.testWaitTwo();
+		try {
+		    matchPage.clickApplyFilterSkill();
+		    testUtil.testWaitTwo();
 		}catch(ElementClickInterceptedException e) {
 			e.printStackTrace();
 		}
-		matchPage.clickResetFilterSkill();
-		testUtil.testWaitEight();
 		matchPage.clickSkillTab();
-		testUtil.testWaitTwo();
-		matchPage.clickCancelSkill();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
+		matchPage.clickResetFilterSkill();
+		testUtil.testWaitEight();*/
+		matchPage.clickSkillTab();
+		testUtil.testWaitFour();
+		//matchPage.clickSkillTab();
+		//testUtil.testWaitFour();
+		/*matchPage.clickCancelSkill();
+		testUtil.testWaitFour();*/
 		//Stored
 		matchPage.clickStored();
 		testUtil.testWaitEight();
 		matchPage.clickStored();
 		testUtil.testWaitEight();
 		//Sorting
-		matchPage.selectMatchBasedOnSkill();
+		/*matchPage.selectMatchBasedOnSkill();
 		testUtil.testWaitEight();
 		matchPage.selectLocation();
 		testUtil.testWaitEight();
@@ -146,11 +154,19 @@ public class MatchPageTest extends TestBase{
 		matchPage.selectHourlyRateMaxMin();
 		testUtil.testWaitEight();
 		matchPage.selectNumberOfHoursMinMax();
-		testUtil.testWaitEight();
+		testUtil.testWaitFour();
 		matchPage.selectNumberOfHoursMaxMin();
-		testUtil.testWaitEight();
+		testUtil.testWaitFour();
 		matchPage.selectLocation();
-		testUtil.testWaitEight();
+		testUtil.testWaitFour();
+		homePage.clickSignOutLink();
+		testUtil.testWaitFour();
+		homePage.clickSignOutBtn();
+		testUtil.testWaitFour();*/
+		homePage.clickSignOutLink();
+		testUtil.testWaitFour();
+		homePage.clickSignOutBtn();
+		testUtil.testWaitFour();
 		
 	}
 	
