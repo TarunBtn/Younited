@@ -29,40 +29,51 @@ public class UlogoMyassignmentsPageTest extends TestBase{
 		myAssignmentsPage=new MyAssignmentsPage();
 		uLogoMyassignmentsPage=new UlogoMyassignmentsPage();
 		testUtil=new TestUtil();
+		testUtil.testWaitTwo();
 		homePageAdmin=loginPage.loginHomePageAdmin(prop.getProperty("usernametwo"), prop.getProperty("passwordtwo"));
-		testUtil.testWaitEight();
-		homePageAdmin.clickAcceptAllCookies();
-		testUtil.testWaitEight();
+		testUtil.testWaitFourteen();
+		//homePageAdmin.clickAcceptAllCookies();
+		//testUtil.testWaitEleven();
 		homePageAdmin.clickUserLogo();
 		testUtil.testWaitFour();
 		homePageAdmin.clickMyAssignmentsTab();
-		testUtil.testWaitFour();
-		homePageAdmin.moveHoverTologoImage();
-		testUtil.testWaitFour();
-		testUtil.scrollDown();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 			
 	}
 	
 	@Test
 	public void UlogoMyassignmentsPage()throws Exception {
-		myAssignmentsPage.clickChooseCompanyDropDown();
-		testUtil.testWaitTwo();
-		myAssignmentsPage.selectCompanyFromDropDown();
+		myAssignmentsPage.clickFilter();
+		testUtil.testWaitFour();
+		myAssignmentsPage.enterValueInFilter("Test");
+		testUtil.testWaitEight();
+		myAssignmentsPage.clickResetFilter();
 		testUtil.testWaitFour();
 		myAssignmentsPage.clickChooseCompanyDropDown();
 		testUtil.testWaitTwo();
-		myAssignmentsPage.clickCommentsLink();
+		myAssignmentsPage.selectCompanyFromDropDownAdmin();
+		testUtil.testWaitEight();
+		myAssignmentsPage.clickChooseCompanyDropDown();
 		testUtil.testWaitFour();
-		testUtil.scrollDown();
-		testUtil.testWaitFour();
+		//testUtil.scrollDown();
+		//testUtil.testWaitTwo();
+		/*myAssignmentsPage.clickCommentsLink();
+		testUtil.testWaitTwo();
+		//testUtil.scrollRight();
+		//testUtil.testWaitTwo();
+		//myAssignmentsPage.clickScrollRight();
+		//testUtil.testWaitFour();
+		//testUtil.scrollDown();
+		//testUtil.testWaitFour();
 		myAssignmentsPage.clickStatusThumbsup();
 		testUtil.testWaitEleven();
 		testUtil.scrollUp();
 		testUtil.testWaitFour();
+		testUtil.scrollUp();
+		testUtil.testWaitTwo();
 		myAssignmentsPage.clickPendingTab();
 		testUtil.testWaitFour();
-		testUtil.scrollDown();
+		testUtil.scrollUp();
 		testUtil.testWaitTwo();
 		myAssignmentsPage.clickEntrepreneurCheckbox();
 		testUtil.testWaitTwo();
@@ -79,7 +90,20 @@ public class UlogoMyassignmentsPageTest extends TestBase{
 		myAssignmentsPage.clickNewTab();
 		testUtil.testWaitTwo();
 		testUtil.scrollDown();
-		testUtil.testWaitTwo();
+		testUtil.testWaitTwo();*/
+		myAssignmentsPage.clickStatusDropDown();
+		testUtil.testWaitFour();
+		myAssignmentsPage.selectStatusFromDropDownClosed();
+		testUtil.testWaitEight();
+		//myAssignmentsPage.clickStatusDropDown();
+		myAssignmentsPage.selectStatusFromDropDownOpen();
+		testUtil.testWaitEight();
+		myAssignmentsPage.clickStatusDropDown();
+		testUtil.testWaitFour();
+		homePageAdmin.clickSignOutLink();
+	  	testUtil.testWaitFour();
+	  	homePageAdmin.clickSignOutBtn();
+	  	testUtil.testWaitEight();
 		
 	}
 	
