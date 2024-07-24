@@ -9,7 +9,7 @@ import com.younited.qa.base.TestBase;
 
 public class HomePageAdmin extends TestBase{
 	//Page factory OR Object repository
-	@FindBy(xpath="//*[@id=\"main-nav\"]/nav/div/div/div[2]/ul[1]/li[2]/a/span")
+	@FindBy(xpath="//span[@class='d-flex']")
 	WebElement assignmentsTab;
 				
 	@FindBy(xpath="//a[@class='nav-link'][normalize-space()='Community']")
