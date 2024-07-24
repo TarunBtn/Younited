@@ -46,14 +46,14 @@ public class UlogoMyreactionsPageTest extends TestBase{
 		//testUtil.testWaitFourteen();
 		//uLogoMyreactionsPage.clickResponseHistory();
 		//testUtil.testWaitEight();
-		/*uLogoMyreactionsPage.clickMyReactionsLogo();
+		uLogoMyreactionsPage.clickMyReactionsLogo();
 		testUtil.testWaitTwo();
 		uLogoMyreactionsPage.clickCheckBox();
 		testUtil.testWaitTwo();
 		uLogoMyreactionsPage.clickStatusDropDown();
 		testUtil.testWaitTwo();
 		uLogoMyreactionsPage.selectStatusDropDown();
-		testUtil.testWaitFour();*/
+		testUtil.testWaitFour();
 		homePageAdmin.clickSignOutLink();
 	  	testUtil.testWaitFour();
 	  	homePageAdmin.clickSignOutBtn();
