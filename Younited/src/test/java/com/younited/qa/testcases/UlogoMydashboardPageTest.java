@@ -24,21 +24,26 @@ public class UlogoMydashboardPageTest extends TestBase{
 		loginPage=new LoginPage();
 		testUtil=new TestUtil();
 		homePageAdmin=loginPage.loginHomePageAdmin(prop.getProperty("usernametwo"), prop.getProperty("passwordtwo"));
-		testUtil.testWaitEight();
-		homePageAdmin.clickAcceptAllCookies();
-		testUtil.testWaitEight();
+		testUtil.testWaitFourteen();
+		//homePageAdmin.clickAcceptAllCookies();
+		//testUtil.testWaitEleven();
 		homePageAdmin.clickUserLogo();
 		testUtil.testWaitFour();
-		//homePageAdmin.clickMydashboardTab();
-		//testUtil.testWaitFour();
-		homePageAdmin.moveHoverTologoImage();
-		testUtil.testWaitTwo();
+		homePageAdmin.clickMydashboardTab();
+		testUtil.testWaitFourteen();
+		//homePageAdmin.moveHoverTologoImage();
+		//testUtil.testWaitTwo();
 		
 	}
 	
 	@Test
-	public void myDashboard() {
-		
+	public void myDashboard()throws Exception {
+		System.out.println("Test is passed");
+		testUtil.testWaitTwo();
+		homePageAdmin.clickSignOutLink();
+	  	testUtil.testWaitFour();
+	  	homePageAdmin.clickSignOutBtn();
+	  	testUtil.testWaitFour();
 	}
 	
 	@AfterMethod
