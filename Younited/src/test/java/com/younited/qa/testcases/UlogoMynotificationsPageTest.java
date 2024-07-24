@@ -27,22 +27,32 @@ public class UlogoMynotificationsPageTest extends TestBase{
 		uLogoMynotificationsPage=new UlogoMynotificationsPage();
 		testUtil=new TestUtil();
 		homePageAdmin=loginPage.loginHomePageAdmin(prop.getProperty("usernametwo"), prop.getProperty("passwordtwo"));
-		testUtil.testWaitEight();
-		homePageAdmin.clickAcceptAllCookies();
-		testUtil.testWaitEight();
-		homePageAdmin.clickUserLogo();
-		testUtil.testWaitFour();
-		homePageAdmin.moveHoverTologoImage();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFourteen();
+		//homePageAdmin.clickAcceptAllCookies();
+		//testUtil.testWaitEleven();
+		//homePageAdmin.clickUserLogo();
+		//testUtil.testWaitFour();
+		//homePageAdmin.moveHoverTologoImage();
+		//testUtil.testWaitTwo();
 		//homePageAdmin.clickMynotificationsTab();
 		//testUtil.testWaitFour();
+		//homePageAdmin.clickMydashboardTab();
+		//testUtil.testWaitEight();
+		testUtil.scrollDown();
+		testUtil.testWaitFour();
 		
 	}
 	
 	@Test
 	public void myNotificationsPage()throws Exception {
+		uLogoMynotificationsPage.clickMyNotificationsLink();
+		testUtil.testWaitEight();
 		//uLogoMynotificationsPage.ClickToOpenMail();
 		//testUtil.testWaitEight();
+		homePageAdmin.clickSignOutLink();
+	  	testUtil.testWaitFour();
+	  	homePageAdmin.clickSignOutBtn();
+	  	testUtil.testWaitFour();
 	}
 	
 	@AfterMethod
