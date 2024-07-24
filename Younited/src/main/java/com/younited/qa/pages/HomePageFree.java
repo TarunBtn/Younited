@@ -75,9 +75,9 @@ public class HomePageFree extends TestBase{
 				dashboard.click();
 			}
 				
-			public AssignmentsPageFree clickAssignmentsLink() {
+			public void clickAssignmentsLink() {
 				assignmentsLink.click();
-				return new AssignmentsPageFree();
+				//return new AssignmentsPageFree();
 			}
 				
 			public void clickAcceptAllCookies() {
@@ -92,24 +92,24 @@ public class HomePageFree extends TestBase{
 				networkTooltip.click();
 			}
 			
-			public StorePageFree clickStoreTooltip() {
+			public void clickStoreTooltip() {
 				storeTooltip.click();
-				return new StorePageFree();
+				//return new StorePageFree();
 			}
 			
-			public CommunityPageFree clickCommunityTab() {
+			public void clickCommunityTab() {
 				communityTab.click();
-				return new CommunityPageFree();
+				//return new CommunityPageFree();
 			}
 			
-			public EntrepreneursPageFree clickEntrepreneurTab() {
+			public void clickEntrepreneurTab() {
 				entrepreneurTab.click();
-				return new EntrepreneursPageFree();
+				//return new EntrepreneursPageFree();
 			}
 			
-			public BusinessesPageFree clickBusinessesTab() {
+			public void clickBusinessesTab() {
 				BusinessesTab.click();
-				return new BusinessesPageFree();
+				//return new BusinessesPageFree();
 			}
 			
 			public void clickUserLogo() {
