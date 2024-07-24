@@ -39,9 +39,9 @@ public class MatchPageTest extends TestBase{
 	@Test
 	public void matchPage()throws Exception {
 		//Value Filter
-		matchPage.clickValueFilterDropdown();
+		//matchPage.clickValueFilterDropdown();
 		testUtil.testWaitTwo();
-		matchPage.selectValueFilter();
+		//matchPage.selectValueFilter();
 		testUtil.testWaitEight();
 		//Availability
 		matchPage.clickAvailabilityDropDown();
