@@ -42,7 +42,7 @@ public class CompleteAssignmentTest extends TestBase{
 		//homePage.clickAcceptAllCookies();
 		//testUtil.testWaitEleven();		
 		homePage.clickMyAssignmentsLink();
-		testUtil.testWaitFourteen();
+		testUtil.testWaitEleven();
 		//testUtil.testWaitEight();
 		//addCommandPage=myAssignmentsPage.clickAddNewCommand();
 		myAssignmentsPage.clickAddNewCommand();
@@ -56,7 +56,7 @@ public class CompleteAssignmentTest extends TestBase{
 		addCommandPage.clickUploadFile();
 		testUtil.testWaitEight();
 		testUtil.scrollUp();
-		testUtil.testWaitTwo();
+		testUtil.testWaitEight();
 		//checkCommandPage.clickFillInComplete();
 		//testUtil.testWaitEight();
 		//testUtil.scrollDown();
@@ -66,7 +66,7 @@ public class CompleteAssignmentTest extends TestBase{
 	@Test
 	public void completeAssignmentTest()throws Exception {
 		completeAssignment.clickCompanyDropDown();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		completeAssignment.selectCompany();
 		testUtil.testWaitFour();
 		testUtil.scrollDown();
@@ -88,13 +88,20 @@ public class CompleteAssignmentTest extends TestBase{
 		completeAssignment.clickWorkLocation();
 		testUtil.testWaitTwo();
 		completeAssignment.selectWorkLocation("Punthorst, Netherlands");
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		completeAssignment.clickWorkLocationTooltip();
-		testUtil.testWaitFour();
-		completeAssignment.clickWorkLocation();
-		testUtil.testWaitTwo();
-		completeAssignment.clickWorkLocationTooltip();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
+		
+		/*WebDriverWait wait = null;
+        WebElement suggestionList = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//ul[@class='suggestion-list']")));
+		
+		WebElement desiredSuggestion = suggestionList.findElement(By.xpath("//li[contains(text(), 'Punthorst Netherlands')]"));
+        desiredSuggestion.click();*/
+		
+		//completeAssignment.clickWorkLocation();
+		//testUtil.testWaitTwo();
+		//completeAssignment.clickWorkLocationTooltip();
+		//testUtil.testWaitFour();
 		completeAssignment.clickWorkingThinkingLevel();
 		testUtil.testWaitFour();
 		completeAssignment.selectWorkingThinkingLevel();
@@ -119,9 +126,9 @@ public class CompleteAssignmentTest extends TestBase{
 		completeAssignment.clickProfileField();
 		testUtil.testWaitTwo();
 		completeAssignment.enterProfile("Database administrator");
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		completeAssignment.clickProfileTooltip();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		completeAssignment.clickNextButton();
 		testUtil.testWaitEight();
 		testUtil.scrollUp();
@@ -209,6 +216,14 @@ public class CompleteAssignmentTest extends TestBase{
 		testUtil.testWaitTwo();*/
 		completeAssignment.clickNextButton();
 		testUtil.testWaitEight();
+		//Short Description
+		completeAssignment.shortDescription("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+		testUtil.testWaitFour();
+		testUtil.scrollDown();
+		testUtil.testWaitFour();
+		//Generate description
+		completeAssignment.generateDescriptiona("hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh");
+		testUtil.testWaitFour();
 		testUtil.scrollDown();
 		testUtil.testWaitFour();
 		completeAssignment.clickNextButton();
@@ -223,11 +238,13 @@ public class CompleteAssignmentTest extends TestBase{
 		testUtil.testWaitFour();
 		completeAssignment.selectVisibleDateTo();
 		testUtil.testWaitFour();
+		completeAssignment.clickSkipAndContinue();
+		testUtil.testWaitEight();
 		//completeAssignment.clickSaveButton();
-		homePage.clickSignOutLink();
-		testUtil.testWaitFour();
-		homePage.clickSignOutBtn();
-		testUtil.testWaitFour();
+		//homePage.clickSignOutLink();
+		//testUtil.testWaitFour();
+		//homePage.clickSignOutBtn();
+		//testUtil.testWaitEight();
 			
 	}
 	

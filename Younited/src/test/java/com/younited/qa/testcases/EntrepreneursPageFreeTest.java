@@ -27,11 +27,13 @@ public class EntrepreneursPageFreeTest extends TestBase{
 		testUtil=new TestUtil();
 		entrepreneursPageFree=new EntrepreneursPageFree();
 		homePageFree=loginPage.loginHomePageFree(prop.getProperty("usernameone"), prop.getProperty("passwordone"));
-		testUtil.testWaitEleven();
+		testUtil.testWaitFourteen();
 		//homePageFree.clickAcceptAllCookies();
-		//testUtil.testWaitEight();
+		//testUtil.testWaitEleven();
+		//homePageFree.suitableAssignments();
+		//testUtil.testWaitFour();
 		homePageFree.clickEntrepreneurTab();
-		testUtil.testWaitEleven();
+		testUtil.testWaitFourteen();
 				
 	}
 	
@@ -77,10 +79,14 @@ public class EntrepreneursPageFreeTest extends TestBase{
 		testUtil.testWaitFour();
 		entrepreneursPageFree.selectSkillToolTip();
 		testUtil.testWaitFour();
+		entrepreneursPageFree.clickSkillsTab();
+		testUtil.testWaitTwo();
 		entrepreneursPageFree.clickApplyFilter();
+		testUtil.testWaitEight();
+		entrepreneursPageFree.clickSkillsTab();
 		testUtil.testWaitFour();
 		entrepreneursPageFree.clickResetFilter();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		entrepreneursPageFree.clickSortingDropDown();
 		testUtil.testWaitTwo();
 		entrepreneursPageFree.selectSortingZtoA();
@@ -88,7 +94,11 @@ public class EntrepreneursPageFreeTest extends TestBase{
 		entrepreneursPageFree.selectSortingAtoZ();
 		testUtil.testWaitFour();
 		entrepreneursPageFree.clickSortingDropDown();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
+		homePageFree.clickSignOutLink();
+		testUtil.testWaitFour();
+		homePageFree.clickSignOutBtn();
+		testUtil.testWaitEight();
 		
 	}
 	
