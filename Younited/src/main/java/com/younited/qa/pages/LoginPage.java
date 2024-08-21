@@ -47,8 +47,7 @@ public class LoginPage extends TestBase{
 		public HomePageFree loginHomePageFree(String un, String pwd) {
 			username.sendKeys(un);
 			password.sendKeys(pwd);
-			loginBtn.click();
-				
+			loginBtn.click();	
 			return new HomePageFree();
 		}
 		
@@ -56,7 +55,6 @@ public class LoginPage extends TestBase{
 			username.sendKeys(un);
 			password.sendKeys(pwd);
 			loginBtn.click();
-			
 			return new HomePageAdmin();
 		}
 			
