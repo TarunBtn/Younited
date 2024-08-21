@@ -31,7 +31,7 @@ public class StorePageFreeTest extends TestBase{
 		//homePageFree.clickAcceptAllCookies();
 		//testUtil.testWaitEleven();
 		homePageFree.clickNetworkTab();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		homePageFree.clickStoreTooltip();
 		testUtil.testWaitEight();
 		
