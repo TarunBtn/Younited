@@ -22,7 +22,6 @@ import com.younited.qa.pages.HomePageFree;
 import com.younited.qa.pages.LoginPage;
 import com.younited.qa.util.TestUtil;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BusinessesPageFreeTest extends TestBase{
 	
