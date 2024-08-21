@@ -33,7 +33,7 @@ public class UlogoMycompanyPageTest extends TestBase{
 		homePageAdmin.clickUserLogo();
 		testUtil.testWaitFour();
 		homePageAdmin.clickMyCompanyTab();
-		testUtil.testWaitEight();
+		testUtil.testWaitEleven();
 		//homePageAdmin.moveHoverTologoImage();
 		//testUtil.scrollDown();
 		//testUtil.testWaitTwo();
