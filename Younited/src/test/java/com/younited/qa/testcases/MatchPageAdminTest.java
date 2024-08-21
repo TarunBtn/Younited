@@ -1,5 +1,6 @@
 package com.younited.qa.testcases;
 
+import org.openqa.selenium.NoSuchElementException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -32,8 +33,8 @@ public class MatchPageAdminTest extends TestBase{
 		testUtil=new TestUtil();
 		homePageAdmin=loginPage.loginHomePageAdmin(prop.getProperty("usernametwo"), prop.getProperty("passwordtwo"));
 		testUtil.testWaitFourteen();
-		//homePageAdmin.clickAcceptAllCookies();
-		//testUtil.testWaitEleven();
+		  //homePageAdmin.clickAcceptAllCookies();
+		  //testUtil.testWaitEleven();
 		homePageAdmin.clickMatchTab();
 		testUtil.testWaitEleven();	
 		
@@ -42,22 +43,26 @@ public class MatchPageAdminTest extends TestBase{
 	@Test
 	public void match()throws Exception {
 		//Assignment Filter
-		matchPage.clickAssignmentFilter();
+		matchPageAdmin.clickValueFilter();
 		testUtil.testWaitTwo();
-		matchPage.enterAssignmentFilter("Ajay");
-		testUtil.testWaitEight();
+		matchPageAdmin.enterValueFilter("Ajay");
+		testUtil.testWaitEleven();
 		matchPageAdmin.clickCancelValueFilter();
+		testUtil.testWaitFourteen();
+		//Assignment Dropdown
+		matchPageAdmin.clickAssignmentDropDown();
+		testUtil.testWaitFourteen();
+		try {
+		    matchPageAdmin.selectAssignmentValue();
+		}catch(NoSuchElementException e) {
+			e.printStackTrace();
+		}
 		testUtil.testWaitEight();
-		//Command Filter
-		matchPage.clickCommandDropDown();
-		testUtil.testWaitTwo();
-		matchPage.selectCommandValue();
-		testUtil.testWaitEight();
-		//matchPage.cancelCommandValue();
-		//testUtil.testWaitEight();
-		//Availability
+		  //matchPage.cancelCommandValue();
+		  //testUtil.testWaitEight();
+		  //Availability
 		matchPage.clickAvailabilityDropDown();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		matchPage.selectOnlyAvailable();
 		testUtil.testWaitEight();
 		matchPage.selectNotAvailable();
@@ -65,10 +70,10 @@ public class MatchPageAdminTest extends TestBase{
 		matchPage.selectEverything();
 		testUtil.testWaitEight();
 		matchPage.clickAvailabilityDropDown();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		//Location
 		matchPage.clickLocationDropDown();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		matchPage.enterLocationClear();
 		testUtil.testWaitFour();
 		matchPage.enterLocationValue("Noordwijk, Netherlands");
@@ -76,113 +81,113 @@ public class MatchPageAdminTest extends TestBase{
 		matchPage.clickApplyFilterLocation();
 		testUtil.testWaitEight();
 		matchPage.clickLocationDropDown();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		matchPage.resetFilterLocation();
 		testUtil.testWaitEight();
 		matchPage.clickLocationDropDown();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		matchPage.clickCancelLocation();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		//Work/Thinking level
 		matchPage.clickWorkThinkingLevelDropDown();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		matchPage.selectWorkThinking();
 		testUtil.testWaitEight();
 		matchPage.clickWorkThinkingLevelDropDown();
 		testUtil.testWaitFour();
 		matchPage.clickWorkThinkingLevelDropDown();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		matchPage.selectWorkThinking();
 		testUtil.testWaitEight();
 		matchPage.clickWorkThinkingLevelDropDown();
-		testUtil.testWaitTwo();		
+		testUtil.testWaitFour();		
 		//Hours
 		matchPage.clickHoursDropDown();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		matchPage.selectHours();
 		testUtil.testWaitEight();
 		matchPage.clickApplyFilterHours();
 		testUtil.testWaitEight();
 		matchPage.clickHoursDropDown();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		matchPage.clickResetFilterHours();
 		testUtil.testWaitEight();
 		matchPage.clickHoursDropDown();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		matchPage.clickCancelHours();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		//Descipline
 		matchPage.clickDesciplineDropDown();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		matchPage.selectDescipline();
 		testUtil.testWaitEight();
 		matchPage.selectDescipline();
 		testUtil.testWaitEight();
 		matchPage.clickDesciplineDropDown();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		//Skills
 		matchPage.clickSkillTab();
 		testUtil.testWaitFour();
-		//testUtil.switchToAlert("Accountbeheer");
-		//testUtil.testWaitFour();
-		/*matchPage.clickEnterValueSkill();
-		testUtil.testWaitFour();
-		matchPage.enterValueSkill("Accountbeheer");
-		testUtil.testWaitFour();
-		//matchPage.selectTooltipSkill();
-		//testUtil.testWaitFour();
-		matchPage.enterValueSkillTab();
-		testUtil.testWaitFour();
+		  //testUtil.switchToAlert("Accountbeheer");
+		  //testUtil.testWaitFour();
+		  //matchPage.clickEnterValueSkill();
+		  //testUtil.testWaitFour();
+		  //matchPage.enterValueSkill("Accountbeheer");
+		  //testUtil.testWaitFour();
+		  //matchPage.selectTooltipSkill();
+		  //testUtil.testWaitFour();
+		  //matchPage.enterValueSkillTab();
+		  //testUtil.testWaitFour();
+		  //matchPage.clickSkillTab();
+		  //testUtil.testWaitFour();
+		  //try {
+		   // matchPage.clickApplyFilterSkill();
+		   // testUtil.testWaitEight();
+		  //}catch(ElementClickInterceptedException e) {
+			//e.printStackTrace();
+		  //}
+		  //matchPage.clickSkillTab();
+	      //testUtil.testWaitFour();
+		  //matchPage.clickResetFilterSkill();
+		  //testUtil.testWaitEight();
+		  //matchPage.clickSkillTab();
+		  //testUtil.testWaitFour();
 		matchPage.clickSkillTab();
 		testUtil.testWaitFour();
-		try {
-		    matchPage.clickApplyFilterSkill();
-		    testUtil.testWaitEight();
-		}catch(ElementClickInterceptedException e) {
-			e.printStackTrace();
-		}
-		matchPage.clickSkillTab();
-	    testUtil.testWaitFour();*/
-		//matchPage.clickResetFilterSkill();
-		//testUtil.testWaitEight();
-		//matchPage.clickSkillTab();
-		//testUtil.testWaitFour();
-		matchPage.clickSkillTab();
-		testUtil.testWaitFour();
-		/*matchPage.clickCancelSkill();
-		testUtil.testWaitFour();*/
+		  //matchPage.clickCancelSkill();
+		  //testUtil.testWaitFour();
 		//Stored
 		matchPage.clickStored();
 		testUtil.testWaitEight();
 		matchPage.clickStored();
 		testUtil.testWaitEight();
 		//Sorting
-		/*matchPage.selectMatchBasedOnSkill();
-		testUtil.testWaitEight();
-		matchPage.selectLocation();
-		testUtil.testWaitEight();
-		matchPage.selectAlphabeticallyAZ();
-		testUtil.testWaitEight();
-		matchPage.selectAlphabeticallyZA();
-		testUtil.testWaitEight();
-		matchPage.selectHourlyRateMinMax();
-		testUtil.testWaitEight();
-		matchPage.selectHourlyRateMaxMin();
-		testUtil.testWaitEight();
-		matchPage.selectNumberOfHoursMinMax();
-		testUtil.testWaitEight();
-		matchPage.selectNumberOfHoursMaxMin();
-		testUtil.testWaitEight();
-		matchPage.selectLocation();
-		testUtil.testWaitEight();
-		homePageAdmin.clickSignOutLink();
-	  	testUtil.testWaitFour();
-	  	homePageAdmin.clickSignOutBtn();
-	  	testUtil.testWaitFour();*/
+		//matchPage.selectMatchBasedOnSkill();
+		//testUtil.testWaitEight();
+		//matchPage.selectLocation();
+		//testUtil.testWaitEight();
+		//matchPage.selectAlphabeticallyAZ();
+		//testUtil.testWaitEight();
+		//matchPage.selectAlphabeticallyZA();
+		//testUtil.testWaitEight();
+		//matchPage.selectHourlyRateMinMax();
+		//testUtil.testWaitEight();
+		//matchPage.selectHourlyRateMaxMin();
+		//testUtil.testWaitEight();
+		//matchPage.selectNumberOfHoursMinMax();
+		//testUtil.testWaitEight();
+		//matchPage.selectNumberOfHoursMaxMin();
+		//testUtil.testWaitEight();
+		//matchPage.selectLocation();
+		//testUtil.testWaitEight();
+		//homePageAdmin.clickSignOutLink();
+	  	//testUtil.testWaitFour();
+	  	//homePageAdmin.clickSignOutBtn();
+	  	//testUtil.testWaitFour();
 		homePageAdmin.clickSignOutLink();
 		testUtil.testWaitFour();
 		homePageAdmin.clickSignOutBtn();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		
 	}
 	

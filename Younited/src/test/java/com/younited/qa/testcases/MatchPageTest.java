@@ -29,10 +29,10 @@ public class MatchPageTest extends TestBase{
 		testUtil=new TestUtil();
 		homePage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 		testUtil.testWaitFourteen();
-		//homePage.clickAcceptAllCookies();
-		//testUtil.testWaitEleven();
+		  //homePage.clickAcceptAllCookies();
+		  //testUtil.testWaitEleven();
 		homePage.clickMatchLink();
-		testUtil.testWaitEight();
+		testUtil.testWaitEleven();
 				
 	}
 	
@@ -40,7 +40,7 @@ public class MatchPageTest extends TestBase{
 	public void matchPage()throws Exception {
 		//Assignment Filter
 		matchPage.clickAssignmentFilterDropdown();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		matchPage.selectAssignmentFilter();
 		testUtil.testWaitEight();
 		//Availability
@@ -57,8 +57,10 @@ public class MatchPageTest extends TestBase{
 		//Location
 		matchPage.clickLocationDropDown();
 		testUtil.testWaitTwo();
+		matchPage.enterLocationClear();
+		testUtil.testWaitFour();
 		matchPage.enterLocationValue("Noordwijk, Netherlands");
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		matchPage.clickApplyFilterLocation();
 		testUtil.testWaitEight();
 		matchPage.clickLocationDropDown();
@@ -166,7 +168,7 @@ public class MatchPageTest extends TestBase{
 		homePage.clickSignOutLink();
 		testUtil.testWaitFour();
 		homePage.clickSignOutBtn();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		
 	}
 	
