@@ -9,7 +9,7 @@ import com.younited.qa.base.TestBase;
 
 public class UlogoIntermediarycompaniesPage extends TestBase{
 	//Pagefactory OR Object Repository
-		@FindBy(id="//input[@id='filter-input']")
+		@FindBy(xpath="//input[@id='filter-input']")
 		WebElement searchCompany;
 		
 		@FindBy(xpath="/html/body/div[1]/main/div/div[2]/div/div[1]/div[2]/div/div/input")
