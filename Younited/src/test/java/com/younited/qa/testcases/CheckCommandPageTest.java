@@ -40,19 +40,26 @@ public class CheckCommandPageTest extends TestBase{
 		homePage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 		testUtil.testWaitFourteen();
 		//homePage.clickAcceptAllCookies();
-		//testUtil.testWaitEight();
+		//testUtil.testWaitEleven();
+		//homePage.clickReactiesDropDown();
+		//testUtil.testWaitFour();
+		//homePage.clickReactiesDropDown();
+		//testUtil.testWaitFour();
 		homePage.clickMyAssignmentsLink();
 		testUtil.testWaitFourteen();
-		myAssignmentsPage.clickAddNewCommand();
-		testUtil.testWaitEight();
+		//testUtil.testWaitEight();
+		addCommandPage=myAssignmentsPage.clickAddNewCommand();
+		testUtil.testWaitEleven();
 		testUtil.scrollDown();
-		testUtil.testWaitFour();
+		testUtil.testWaitTwo();
 		addCommandPage.clickChooseFile();
-		testUtil.testWaitEight();
-		testUtil.uploadFile("D:\\Testfile.docx");
+		testUtil.testWaitFour();
+		testUtil.uploadFile("D:\\CV Jort Zwolsman.doc");
 		testUtil.testWaitEight();
 		addCommandPage.clickUploadFile();
-		testUtil.testWaitEight();
+		testUtil.testWaitEleven();
+		//testUtil.scrollDown();
+		//testUtil.testWaitTwo();
 							
 	}
 	
@@ -61,12 +68,16 @@ public class CheckCommandPageTest extends TestBase{
 		//checkCommandPage.clickFillInComplete();
 		//testUtil.testWaitEight();
 		System.out.println("Test is passed");
+		testUtil.testWaitFour();
+		testUtil.scrollUp();
+		testUtil.testWaitFour();
+		
 	}
-	
 	
 	@AfterMethod
 	public void tearDown() {
 		Driver.quit();
+		
 	}
 
 }
