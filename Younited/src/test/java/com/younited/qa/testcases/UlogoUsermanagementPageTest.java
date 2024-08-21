@@ -46,7 +46,7 @@ public class UlogoUsermanagementPageTest extends TestBase{
 		uLogoUsermanagementPage.clickSearchName();
 		testUtil.testWaitFour();
 		uLogoUsermanagementPage.enterSearchName("Ajay");
-		testUtil.testWaitEight();
+		testUtil.testWaitEleven();
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
 		testUtil.scrollUp();
@@ -71,7 +71,7 @@ public class UlogoUsermanagementPageTest extends TestBase{
 		testUtil.testWaitFour();
 		//Roles
 		uLogoUsermanagementPage.clickRoleDropDown();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		uLogoUsermanagementPage.selectRole();
 		testUtil.testWaitFour();
 		testUtil.scrollDown();
