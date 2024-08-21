@@ -14,8 +14,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import com.younited.qa.util.TestUtil;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
 public class TestBase {
 
 	public static WebDriver Driver;
