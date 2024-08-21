@@ -12,7 +12,7 @@ public class MatchPage extends TestBase{
 		@FindBy(xpath="//div[@class='multiselect__select']")
 		WebElement assignmentFilterDropdown;
 		
-		@FindBy(xpath="//span[@class='multiselect__option--highlight multiselect__option']")
+		@FindBy(xpath="//span[contains(text(),'Web Development 1')]")
 		WebElement selectAssignmentFilter;
 		
 		@FindBy(xpath="//span[@class='material-icons reset_assignment md-18']")

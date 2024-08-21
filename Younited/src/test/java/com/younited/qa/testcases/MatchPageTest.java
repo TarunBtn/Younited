@@ -32,7 +32,7 @@ public class MatchPageTest extends TestBase{
 		  //homePage.clickAcceptAllCookies();
 		  //testUtil.testWaitEleven();
 		homePage.clickMatchLink();
-		testUtil.testWaitEleven();
+		testUtil.testWaitFourteen();
 				
 	}
 	
@@ -40,7 +40,7 @@ public class MatchPageTest extends TestBase{
 	public void matchPage()throws Exception {
 		//Assignment Filter
 		matchPage.clickAssignmentFilterDropdown();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		matchPage.selectAssignmentFilter();
 		testUtil.testWaitEight();
 		//Availability
