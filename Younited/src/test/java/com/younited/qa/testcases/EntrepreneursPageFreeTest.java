@@ -40,9 +40,9 @@ public class EntrepreneursPageFreeTest extends TestBase{
 	@Test
 	public void entrepreneurPageFilter()throws Exception {
 		entrepreneursPageFree.enterEntrepreneur("Ajay");
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		entrepreneursPageFree.clickCancel();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		//Working/Thinking level
 		entrepreneursPageFree.clickWorkingThinkingDropDown();
 		testUtil.testWaitTwo();
@@ -69,10 +69,10 @@ public class EntrepreneursPageFreeTest extends TestBase{
 		entrepreneursPageFree.selectAreaOfInterest();
 		testUtil.testWaitFour();
 		entrepreneursPageFree.clickAreaOfInterestDropDown();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		//Skills
 		entrepreneursPageFree.clickSkillsTab();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		entrepreneursPageFree.enterSkill();
 		testUtil.testWaitTwo();
 		entrepreneursPageFree.enterSkill("Postman");
