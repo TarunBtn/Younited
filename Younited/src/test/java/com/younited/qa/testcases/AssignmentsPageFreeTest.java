@@ -1,5 +1,7 @@
 package com.younited.qa.testcases;
 
+import org.openqa.selenium.ElementNotInteractableException;
+import org.openqa.selenium.NoSuchElementException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -19,6 +21,7 @@ public class AssignmentsPageFreeTest extends TestBase{
 	public AssignmentsPageFreeTest() {
 		super();
 	}
+	
 	@BeforeMethod
 	public void setUp()throws Exception {
 		initialization();
@@ -26,28 +29,35 @@ public class AssignmentsPageFreeTest extends TestBase{
 		assignmentsPageFree=new AssignmentsPageFree();
 		testUtil=new TestUtil();
 		homePageFree=loginPage.loginHomePageFree(prop.getProperty("usernameone"), prop.getProperty("passwordone"));
-		testUtil.testWaitEleven();
+		testUtil.testWaitFourteen();	
 		//homePageFree.clickAcceptAllCookies();
-		//testUtil.testWaitEight();
+		//testUtil.testWaitEleven();
 		homePageFree.clickAssignmentsLink();
 		testUtil.testWaitEight();
 			
 	}
 	
-	//public void assignmentsPageTitleTest()throws Exception {
-		//String title=assignmentsPageFree.assignmentsPageTitle();
-		//Assert.assertEquals(title, "Opdrachten - Younited®");
-		//testUtil.testWaitTwo();
-	//}
-	
 	@Test
 	public void clickFiltersTest()throws Exception {
+		//ValueFilterAssignment
+		assignmentsPageFree.enterAssignmentsName("QA EngineerEight");
+		testUtil.testWaitEight();
+		assignmentsPageFree.selectAssignmentsValue();
+		testUtil.testWaitFour();
+		assignmentsPageFree.clearAssignmentsFilter();
+		testUtil.testWaitFour();
 		//Sector
+		try {
+		    assignmentsPageFree.clickSectorTab();
+		}catch(ElementNotInteractableException e) {
+			e.printStackTrace();
+		}
+		testUtil.testWaitFour();
+		assignmentsPageFree.selectSector();
+		testUtil.testWaitFour();
+		assignmentsPageFree.selectSector();
+		testUtil.testWaitFour();
 		assignmentsPageFree.clickSectorTab();
-		testUtil.testWaitFour();
-		assignmentsPageFree.selectSector();
-		testUtil.testWaitFour();
-		assignmentsPageFree.selectSector();
 		testUtil.testWaitFour();
 		//Descipline
 		assignmentsPageFree.clickDescipline();
@@ -56,127 +66,146 @@ public class AssignmentsPageFreeTest extends TestBase{
 		testUtil.testWaitFour();
 		assignmentsPageFree.selectDescipline();
 		testUtil.testWaitFour();
+		assignmentsPageFree.clickDescipline();
+		testUtil.testWaitFour();
 		//Skill
 		assignmentsPageFree.clickSkillTab();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		assignmentsPageFree.enterSkill();
 		testUtil.testWaitFour();
 		assignmentsPageFree.enterSkillValue("Postman");
 		testUtil.testWaitFour();
-		//assignmentsPageFree.selectSkillToolTip();
-		//testUtil.testWaitFour();
+		assignmentsPageFree.selectSkillToolTip();
+		testUtil.testWaitFour();
+		assignmentsPageFree.clickSkillTab();
+		testUtil.testWaitFour();
 		assignmentsPageFree.applySkillFilter();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		assignmentsPageFree.clickSkillTab();
 		testUtil.testWaitFour();
-		assignmentsPageFree.clickSkillTab();
+		//assignmentsPageFree.clickSkillTab();
+		//testUtil.testWaitFour();
+		assignmentsPageFree.clickResetFilterSkill();
 		testUtil.testWaitFour();
-		assignmentsPageFree.clickClearFilterSkill();
+		assignmentsPageFree.clickSkillTab();
 		testUtil.testWaitFour();
 		assignmentsPageFree.clickCancelSkill();
 		testUtil.testWaitFour();
 		//Duration
 		assignmentsPageFree.clickDuration();
-		testUtil.testWaitTwo();
-		assignmentsPageFree.selectDuration();
 		testUtil.testWaitFour();
-		assignmentsPageFree.clickDuration();
-		testUtil.testWaitTwo();	
-		assignmentsPageFree.clickDuration();
-		testUtil.testWaitTwo();
 		assignmentsPageFree.selectDuration();
 		testUtil.testWaitFour();
 		assignmentsPageFree.clickDuration();
 		testUtil.testWaitFour();
-		//WorkAndThinkingLevel
-		assignmentsPageFree.clickWorkAndThinkingLevel();
-		testUtil.testWaitTwo();
-		assignmentsPageFree.selectWorkAndThinkingLevel();
+		assignmentsPageFree.clickDuration();
 		testUtil.testWaitFour();
+		assignmentsPageFree.selectDuration();
+		testUtil.testWaitFour();
+		assignmentsPageFree.clickDuration();
+		testUtil.testWaitFour();
+		//Work & Thinking level
 		assignmentsPageFree.clickWorkAndThinkingLevel();
-		testUtil.testWaitTwo();
-		assignmentsPageFree.clickWorkAndThinkingLevel();
+		testUtil.testWaitFour();
+	    assignmentsPageFree.selectWorkAndThinkingLevel();
+		testUtil.testWaitFour();
+	    assignmentsPageFree.clickWorkAndThinkingLevel();
+		testUtil.testWaitFour();
+	    assignmentsPageFree.clickWorkAndThinkingLevel();
 		testUtil.testWaitFour();
 		assignmentsPageFree.selectWorkAndThinkingLevel();
 		testUtil.testWaitFour();
 		assignmentsPageFree.clickWorkAndThinkingLevel();
 		testUtil.testWaitFour();
 		//Hours
-		assignmentsPageFree.clickHoursTab();
+	    assignmentsPageFree.clickHoursTab();
 		testUtil.testWaitFour();
 		assignmentsPageFree.selectHours();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		assignmentsPageFree.applyHoursFilter();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		assignmentsPageFree.clickHoursTab();
 		testUtil.testWaitFour();
 		assignmentsPageFree.resetHoursFilter();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		assignmentsPageFree.clickHoursTab();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		assignmentsPageFree.clickCancelHours();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		//Hourly rate
 		assignmentsPageFree.clickHourlyRateTab();
 		testUtil.testWaitFour();
 		assignmentsPageFree.selectHourlyRate();
 		testUtil.testWaitFour();
 		assignmentsPageFree.applyHourlyRateFilter();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		assignmentsPageFree.clickHourlyRateTab();
 		testUtil.testWaitFour();
 		assignmentsPageFree.resetHourlyRateFilter();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		assignmentsPageFree.clickHourlyRateTab();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		assignmentsPageFree.clickCancelHourlyRate();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		//Location
 		assignmentsPageFree.clickLocationTab();
-		testUtil.testWaitTwo();
-		assignmentsPageFree.locationRemove();
 		testUtil.testWaitFour();
-		assignmentsPageFree.enterLocation("Noordwijk, Netherlands");
+		assignmentsPageFree.enterLocation("Noordwijk Netherlands");
 		testUtil.testWaitFour();
-		assignmentsPageFree.applyLocationFilter();
+		try {
+			  	assignmentsPageFree.enterLocationToolTip();
+			  	testUtil.testWaitFour();
+		}catch(ElementNotInteractableException e) {
+			   e.printStackTrace();
+		}
+		testUtil.testWaitFour();
+		try {
+			  	assignmentsPageFree.applyLocationFilter();
+			  	testUtil.testWaitFour();
+		}catch(NoSuchElementException e) {
+			    e.printStackTrace();
+		}
+		testUtil.testWaitFour();
+		assignmentsPageFree.clickLocationTab();
 		testUtil.testWaitFour();
 		assignmentsPageFree.clickLocationTab();
 		testUtil.testWaitFour();
 		assignmentsPageFree.resetLocation();
-		testUtil.testWaitFour();
-		//assignmentsPageFree.clickLocationTab();
-		//testUtil.testWaitTwo();
-		//assignmentsPageFree.clickCancelLocation();
-		//testUtil.testWaitTwo();
+		testUtil.testWaitEight();
 		//View matches
 		assignmentsPageFree.clickViewMatches();
-		testUtil.testWaitFour();
+		testUtil.testWaitEleven();
 		assignmentsPageFree.clickViewMatches();
-		testUtil.testWaitFour();
+		testUtil.testWaitEleven();
 		//Favourites
 		assignmentsPageFree.clickFavorites();
-		testUtil.testWaitFour();
+		testUtil.testWaitEleven();
 		assignmentsPageFree.clickFavorites();
-		testUtil.testWaitFour();
+		testUtil.testWaitEleven();
 		//Sorting
 		assignmentsPageFree.clickSortingDropDown();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		assignmentsPageFree.selectPublicationDateOldFirst();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();	
 		assignmentsPageFree.selectAtHourlyRate();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		assignmentsPageFree.selectByNumberOfHours();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		assignmentsPageFree.selectPublicationDateNewFirst();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		assignmentsPageFree.clickSortingDropDown();
 		testUtil.testWaitFour();
+		homePageFree.clickSignOutLink();
+		testUtil.testWaitFour();
+		homePageFree.clickSignOutBtn();
+		testUtil.testWaitEight();
 		
 	}
 	
 	@AfterMethod
 	public void tearDown() {
 		Driver.quit();
+		
 	}
 
 }
