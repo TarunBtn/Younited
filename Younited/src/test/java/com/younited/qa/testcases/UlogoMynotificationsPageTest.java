@@ -39,7 +39,7 @@ public class UlogoMynotificationsPageTest extends TestBase{
 		//homePageAdmin.clickMydashboardTab();
 		//testUtil.testWaitEight();
 		testUtil.scrollDown();
-		testUtil.testWaitFour();
+		testUtil.testWaitEleven();
 		
 	}
 	
