@@ -253,7 +253,7 @@ public class UlogoMyprofilePageTest extends TestBase{
 		uLogoMyprofilePage.clickCoursesTab();
 		testUtil.testWaitFour();
 		testUtil.scrollDown();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		uLogoMyprofilePage.clickAddCourse();
 		testUtil.testWaitFour();
 		//testUtil.scrollDown();
@@ -284,7 +284,7 @@ public class UlogoMyprofilePageTest extends TestBase{
 		homePageAdmin.clickSignOutLink();
 	  	testUtil.testWaitFour();
 	  	homePageAdmin.clickSignOutBtn();
-	  	testUtil.testWaitFour();
+	  	testUtil.testWaitEight();
 		
 	}
 	

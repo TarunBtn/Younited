@@ -33,7 +33,7 @@ public class UlogoMyreactionsPageTest extends TestBase{
 		homePageAdmin.clickUserLogo();
 		testUtil.testWaitEight();
 		homePageAdmin.clickMyReactionsTab();
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		
 		
 	}
@@ -57,7 +57,7 @@ public class UlogoMyreactionsPageTest extends TestBase{
 		homePageAdmin.clickSignOutLink();
 	  	testUtil.testWaitFour();
 	  	homePageAdmin.clickSignOutBtn();
-	  	testUtil.testWaitFour();
+	  	testUtil.testWaitEight();
 	}
 	
 	@AfterMethod

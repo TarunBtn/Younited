@@ -52,7 +52,7 @@ public class UlogoIntermediarycompaniesPageTest extends TestBase{
 	@Test
 	public void UlogoIntermediarycompanyPage()throws Exception {
 		uLogoIntermediarycompanyPage.enterSearchCompany("SilverTouch");
-		testUtil.testWaitFour();
+		testUtil.testWaitEight();
 		//uLogoIntermediarycompanyPage.clickSearchCompany();
 		//testUtil.testWaitTwo();
 		//uLogoIntermediarycompanyPage.clickCancelSearch();
@@ -65,30 +65,29 @@ public class UlogoIntermediarycompaniesPageTest extends TestBase{
 		uLogoIntermediarycompanyPage.enterCompanyName("SilverTouch");
 		testUtil.testWaitEight();
 		uLogoIntermediarycompanyPage.selectCompanyTooltip();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
-		testUtil.testWaitTwo();
 		testUtil.scrollDown();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		//uLogoIntermediarycompanyPage.aboutYourCompany("Testdata");
 		//testUtil.testWaitFour();
 		//Sector
 		uLogoIntermediarycompanyPage.clickSectorDropDown();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		uLogoIntermediarycompanyPage.selectSector();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		//testUtil.scrollDown();
 		//testUtil.testWaitTwo();
 		//Enter website
 		uLogoIntermediarycompanyPage.clearWebsiteValue();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		uLogoIntermediarycompanyPage.enterWebsite("https://silvertouch.com/");
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		testUtil.scrollDown();
 		testUtil.testWaitTwo();
 		testUtil.scrollDown();
-		testUtil.testWaitTwo();
+		testUtil.testWaitFour();
 		//Save company
 		uLogoIntermediarycompanyPage.clickSaveBtn();
 		testUtil.testWaitEight();
@@ -132,7 +131,7 @@ public class UlogoIntermediarycompaniesPageTest extends TestBase{
 		homePageAdmin.clickSignOutLink();
 	  	testUtil.testWaitFour();
 	  	homePageAdmin.clickSignOutBtn();
-	  	testUtil.testWaitFour();
+	  	testUtil.testWaitEight();
 		
 	}
 	

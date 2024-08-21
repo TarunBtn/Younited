@@ -29,14 +29,14 @@ public class UlogoAllassignmentsPageTest extends TestBase{
 		testUtil=new TestUtil();
 		homePageAdmin=loginPage.loginHomePageAdmin(prop.getProperty("usernametwo"), prop.getProperty("passwordtwo"));
 		testUtil.testWaitFourteen();
-		//homePageAdmin.clickAcceptAllCookies();
-		//testUtil.testWaitEleven();
+		  //homePageAdmin.clickAcceptAllCookies();
+		  //testUtil.testWaitEleven();
 		homePageAdmin.clickUserLogo();
 		testUtil.testWaitEight();
 		homePageAdmin.clickAllassignmentsTab();
 		testUtil.testWaitEight();
-		//homePageAdmin.moveHoverTologoImage();
-		//testUtil.testWaitFour();
+		  //homePageAdmin.moveHoverTologoImage();
+		  //testUtil.testWaitFour();
 		
 	}
 	
@@ -48,10 +48,10 @@ public class UlogoAllassignmentsPageTest extends TestBase{
 		testUtil.testWaitFour();
 		testUtil.scrollUp();
 		testUtil.testWaitFour();
-		//uLogoAllassignmentsPage.clickExactSearch();
-		//testUtil.testWaitFour();
-		//uLogoAllassignmentsPage.clickExactSearch();
-		//testUtil.testWaitFour();
+		  //uLogoAllassignmentsPage.clickExactSearch();
+		  //testUtil.testWaitFour();
+		  //uLogoAllassignmentsPage.clickExactSearch();
+		  //testUtil.testWaitFour();
 		uLogoAllassignmentsPage.clickResetCompany();
 		testUtil.testWaitEight();
 		uLogoAllassignmentsPage.clickStatusDropDown();
@@ -70,7 +70,7 @@ public class UlogoAllassignmentsPageTest extends TestBase{
 		testUtil.testWaitTwo();
 		uLogoAllassignmentsPage.selectFilterDropDown();
 		testUtil.testWaitEight();
-		//uLogoAllassignmentsPage.clickFilterDropDown();
+		  //uLogoAllassignmentsPage.clickFilterDropDown();
 		homePageAdmin.clickSignOutLink();
 	  	testUtil.testWaitFour();
 	  	homePageAdmin.clickSignOutBtn();
