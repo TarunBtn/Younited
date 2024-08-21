@@ -16,7 +16,6 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBaseBrowserStack {
 	
@@ -42,10 +41,10 @@ public class TestBaseBrowserStack {
 		caps.setCapability("name", methodName);
 		
 		if(browserName.equals("chrome")) {
-			WebDriverManager.chromedriver().setup();
+			//WebDriverManager.chromedriver().setup();
 			caps.setCapability("browser", "Chrome");
 		}else if(browserName.equals("firefox")) {
-			WebDriverManager.firefoxdriver().setup();
+			//WebDriverManager.firefoxdriver().setup();
 			caps.setCapability("browser", "Firefox");
 		}
 		
