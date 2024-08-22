@@ -34,7 +34,6 @@ public class TestBase {
 	public void initialization()throws Exception {
 		String browserName=prop.getProperty("browser");
 		if(browserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
 			//WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--headless");
@@ -42,6 +41,7 @@ public class TestBase {
 			options.addArguments("--disable-dev-shm-usage");
 			options.addArguments("--disable-gpu");
 			options.addArguments("--window-size=1920,1080");
+			System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
 			Driver=new ChromeDriver(options);
 			//Driver=new ChromeDriver();
 		}else if(browserName.equals("FF")) {
