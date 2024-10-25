@@ -12,7 +12,7 @@ import com.younited.qa.pages.HomePage;
 import com.younited.qa.pages.LoginPage;
 import com.younited.qa.util.TestUtil;
 
-public class LoginPageTest extends TestBaseBrowserStack{
+public class LoginPageTest extends TestBase{
 	
 		/*public void doLogin() {
 			Driver.get("https://acc-nox-freelancemarktplaats-mobility.azurewebsites.net/");
