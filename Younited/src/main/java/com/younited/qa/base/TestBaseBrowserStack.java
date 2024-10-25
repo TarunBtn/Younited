@@ -22,7 +22,7 @@ public class TestBaseBrowserStack {
 
     public static final String USERNAME = "your_username";
     public static final String AUTOMATE_KEY = "your_access_key";
-    public static final String BROWSERSTACK_URL = "https://" + "tarunbutani_PiOvc9" + ":" + "jpizFmPN3srPvMn6uf39" + "@hub-cloud.browserstack.com/wd/hub";
+    public static final String BROWSERSTACK_URL = "https://" + "tarunbutani_Go8rIB" + ":" + "x7oJqBE5WbvkLRBZB5cf" + "@hub-cloud.browserstack.com/wd/hub";
 
     public TestBaseBrowserStack() {
       try {
