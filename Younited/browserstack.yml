@@ -4,7 +4,7 @@ platforms:
   - os: Windows
     osVersion: 10
     browserName: Chrome
-    browserVersion: 129.0
+    browserVersion: 130.0
 browserstackLocal: true
 buildName: bstack-demo
 buildIdentifier: ${BUILD_NUMBER}
