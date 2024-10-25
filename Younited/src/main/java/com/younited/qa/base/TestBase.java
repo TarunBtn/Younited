@@ -38,9 +38,6 @@ e.printStackTrace();
 
 public void initialization() throws Exception {
 String browserName = prop.getProperty("browserName");
-if (browserName == null) {
-throw new Exception("Browser name is not specified in the configuration file.");
-}
 
 if (browserName.equals("Chrome")) {
 System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
