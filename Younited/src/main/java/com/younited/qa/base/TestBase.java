@@ -22,7 +22,7 @@ public static Properties prop;
 
 public static final String USERNAME = "tarunbutani_Go8rIB";
 public static final String AUTOMATE_KEY = "x7oJqBE5WbvkLRBZB5cf";
-public static final String BROWSERSTACK_URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
+public static final String BROWSERSTACK_URL = "https://" + "tarunbutani_Go8rIB" + ":" + "x7oJqBE5WbvkLRBZB5cf" + "@hub-cloud.browserstack.com/wd/hub";
 
 public TestBase() {
 try {
