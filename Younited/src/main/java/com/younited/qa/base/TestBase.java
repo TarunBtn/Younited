@@ -59,9 +59,9 @@ caps.setCapability("name", "Sample Test");
 Driver = new RemoteWebDriver(new URL(BROWSERSTACK_URL), caps);
 }
 
-//if (Driver == null) {
-//throw new Exception("Failed to initialize the WebDriver.");
-//}
+if (Driver == null) {
+throw new Exception("Failed to initialize the WebDriver.");
+}
 
 Driver.manage().window().maximize();
 Driver.manage().deleteAllCookies();
