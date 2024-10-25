@@ -47,7 +47,7 @@ public class TestBase {
         } else if (browserName.equals("browserstack")) {
         	
             DesiredCapabilities caps = new DesiredCapabilities();
-            caps.setCapability("browser", "Chrome");
+            caps.setCapability("browserName", "Chrome");
             caps.setCapability("browser_version", "latest");
             caps.setCapability("os", "Windows");
             caps.setCapability("os_version", "10");
