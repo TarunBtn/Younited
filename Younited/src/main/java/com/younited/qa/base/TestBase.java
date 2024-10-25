@@ -27,7 +27,7 @@ public class TestBase {
     public TestBase() {
       try {
          prop = new Properties();
-         FileInputStream ip = new FileInputStream("C:\\Users\\tbutani\\git\\YounitedOne\\YounitedOne\\src\\main\\java\\com\\younited\\qa\\config\\config.properties");
+         FileInputStream ip = new FileInputStream("C:\\Users\\no02\\git\\Younited\\Younited\\browserstack.yml");
          prop.load(ip);
           } catch(FileNotFoundException e) {
                    e.printStackTrace();
