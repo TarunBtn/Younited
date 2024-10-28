@@ -26,26 +26,26 @@ public class TestBase {
 
   public TestBase() {
     try {
-    prop = new Properties();
-    FileInputStream ip = new FileInputStream("C:\\Users\\no02\\git\\Younited\\Younited\\browserstack.yml");
-    prop.load(ip);
+        prop = new Properties();
+        FileInputStream ip = new FileInputStream("C:\\Users\\no02\\git\\Younited\\Younited\\browserstack.yml");
+        prop.load(ip);
     } catch (FileNotFoundException e) {
-    e.printStackTrace();
+        e.printStackTrace();
     } catch (IOException e) {
-    e.printStackTrace();
+        e.printStackTrace();
     }
   }
 
     public void initialization() throws Exception {
-      String browserName = prop.getProperty("browserName");
+        String browserName = prop.getProperty("browserName");
 
-    if (browserName.equals("Chrome")) {
+    if(browserName.equals("Chrome")) {
         System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
         Driver = new ChromeDriver();
-    } else if (browserName.equals("FF")) {
+    }else if (browserName.equals("FF")) {
         System.setProperty("webdriver.gecko.driver", "C:\\geckodriver\\geckodriver.exe");
         Driver = new FirefoxDriver();
-    } else if (browserName.equals("browserstack")) {
+    }else if (browserName.equals("browserstack")) {
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability("browserName", "Chrome");
         caps.setCapability("browser_version", "latest");
@@ -56,7 +56,7 @@ public class TestBase {
         Driver = new RemoteWebDriver(new URL(BROWSERSTACK_URL), caps);
   }
 
-    if (Driver == null) {
+    if(Driver == null) {
         throw new Exception("Failed to initialize the WebDriver.");
     }
 
